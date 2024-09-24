@@ -1,12 +1,25 @@
+*  {
+    margin: auto;
+  }  
+
 header {
-    background-color: yellow;
+    background-color: rgb(255, 213, 0);
 }
 
 ul {
     list-style-type: none;
+    padding: 10px;
 }
 
 li {
     display: inline-block;
     margin: 20px;
+}
+
+h1, h2, h3 {
+ padding: 10px;
+}
+
+.nav {
+    text-align: right;
 }
