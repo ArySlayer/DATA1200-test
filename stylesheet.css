@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     
@@ -5,17 +6,19 @@ body {
 
 header {
     background-color: yellow;
-}
 
+}
 ul {
     list-style-type: none;
     margin-top:0px;
+
 }
 
 li {
     display: inline-block;
     margin: 20px;
 }
+
 
 .BachelorrogramTable tr td{
     font-size: 25px;
@@ -35,3 +38,12 @@ main {
 h1 {
     font-size: 50px;
 }
+
+h1, h2, h3 {
+ padding: 10px;
+}
+
+.nav {
+    text-align: right;
+}
+
