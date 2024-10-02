@@ -4,8 +4,9 @@
 
 .oslometIMG {
     position: fixed;
-    bottom: 47vw; /* 10px from the bottom of the viewport */
-    right: 90vw; /* 10px from the right of the viewport */
+    bottom: 45rem; /* 10px from the bottom of the viewport */
+    padding-left: 2rem;
+    
     height: auto;
 }
 
