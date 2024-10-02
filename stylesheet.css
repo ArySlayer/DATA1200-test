@@ -1,16 +1,13 @@
-<<<<<<< Updated upstream
-=======
 .nav i {
     padding-right: 3%;
 }
 
 .oslometIMG {
     position: fixed;
-    bottom: 630px; /* 10px from the bottom of the viewport */
-    right: 1200px; /* 10px from the right of the viewport */
+    bottom: 47vw; /* 10px from the bottom of the viewport */
+    right: 90vw; /* 10px from the right of the viewport */
     height: auto;
 }
->>>>>>> Stashed changes
 
 body {
     margin: 0px;
@@ -18,22 +15,12 @@ body {
 }
 
 header {
-<<<<<<< Updated upstream
     background-color: rgb(255, 213, 0);
-=======
-    background-color: #ffd500;
-
-}
->>>>>>> Stashed changes
 
 }
 ul {
     list-style-type: none;
-<<<<<<< Updated upstream
-    margin-top:0px;
-=======
     margin-top: 0px;
->>>>>>> Stashed changes
 
 }
 
