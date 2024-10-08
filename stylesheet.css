@@ -1,27 +1,48 @@
-.nav i {
-    padding-right: 3%;
-}
 
 .oslometIMG {
     /*position: fixed;*/
     bottom: 47vw; /* 10px from the bottom of the viewport */
-    right: 90vw; /* 10px from the right of the viewport */
-    height: auto;
+    right: 90vw; /* 10px from the right of the viewport *
+   
 }
-
+/* Adjust the content width for smaller screens */
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
 body {
-    margin: 0px;
-    
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: rgb(255, 213, 0);
-
+    position: relative;
+    padding: 10px;
 }
+
+.oslometIMG {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.nav {
+    text-align: right;
+    padding-right: 20px;
+}
+
 ul {
     list-style-type: none;
-    margin-top: 0px;
+    margin-top:0px;
 
+
+    padding: 0;
+    margin-top: 0;
 }
 
 li {
@@ -29,31 +50,28 @@ li {
     margin: 20px;
 }
 
-
-.BachelorrogramTable tr td{
-    font-size: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    border-top: 1px solid black;
-}
-main {
-    margin-left: 10%;
-    margin-right: 10%;
-}
 .BachelorrogramTable {
     border-spacing: 30px 10px;
     width: 100%;
 }
+
+.BachelorrogramTable tr td {
+    font-size: 25px;
+    padding: 20px 10px;
+    border-top: 1px solid black;
+}
+
+/* Font settings */
 h1 {
     font-size: 50px;
+    padding: 10px;
+}
+.Studieoversikt {
+    text-decoration: underline;
 }
 
-h1, h2, h3 {
- padding: 10px;
+@media (orientation: portrait) {
+    .BachelorrogramTable tr td {
+        display: block;
 }
-
-.nav {
-    text-align: right;
 }
-
