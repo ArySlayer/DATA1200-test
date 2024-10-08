@@ -5,6 +5,10 @@
     margin: 0;
     padding: 0; 
     height: auto;
+    /*position: fixed;*/
+    bottom: 47vw; /* 10px from the bottom of the viewport */
+    right: 90vw; /* 10px from the right of the viewport */
+   
 }
 /* Adjust the content width for smaller screens */
 main {
@@ -67,4 +71,9 @@ h1 {
     .BachelorrogramTable tr td {
         display: block;
 }
+}
+iframe {
+    width: 800px;
+    height: 600px;
+    
 }
