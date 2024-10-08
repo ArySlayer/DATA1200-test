@@ -1,12 +1,13 @@
-
 .nav i {
     padding-right: 3%;
 }
 
 .oslometIMG {
     position: fixed;
-    bottom: 630px; 
-    right: 1200px;
+    bottom: 45rem;
+    padding-left: 2rem;
+
+    
     height: auto;
 }
 
@@ -22,6 +23,7 @@ header {
 ul {
     list-style-type: none;
     margin-top:0px;
+
 
 }
 
