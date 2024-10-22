@@ -85,3 +85,14 @@ h2 {
 .Studieoversikt {
     text-decoration: underline;
 }
+.NedtrekkOverskrifter {
+    font-size: 20px;
+    font-weight: bold;
+}
+iframe {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    display: block;
+    
+}
