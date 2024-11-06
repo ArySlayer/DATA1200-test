@@ -3,6 +3,7 @@ html {
 }
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -16,7 +17,22 @@ h1 {
     text-align: center;
 }
 
-h2, p {
+h2, p, h3 {
     padding-left: 2rem;
+    text-align: left;
 }
+ .commit_history, .specifc_change {
+    padding: 1.75rem;
+ }
+
+ .box {
+    align-items: center;
+ }
+    @media (orientation: portrait) {
+        .box {
+                  min-width: 800px;
+        }
+  
+
+    }
 
