@@ -19,16 +19,88 @@ header {
 
 }
 
-.innhold {
-display: flex;
-flex-direction: row;
-
+.tekst {
+  margin-bottom: 20px;
+  flex: 2;
+  width: 100%; /*Hvorfor putta jeg denne her egt idk*/
+  text-align: justify;
 }
 
-p {
-  border: 2px solid rgba(97, 129, 109, 0.538);
-  padding: 20px;
-}  
+@media screen and (max-width: 800px) {
+  .grid-container{
+    display:grid;
+  }
+}
+
+.FLEX {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ column-gap: 30px;
+ align-items:end;
+}
+
+@media screen and (max-width: 500px) {
+
+  .FLEX {
+    display:inline-block;
+  }
+}
+
+.vær {
+  display:flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: justify;
+  align-items: center;
+}
+
+.yrIMG{
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.map {
+  display:flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  width: 50%;
+  border-radius: 15px;
+  background-color: rgba(97, 129, 109, 0.715);
+  color: rgba(247, 242, 242, 0.782);
+  border: none;
+  box-shadow: 2px 2px 7px rgb(107, 103, 103);
+  transition: background-color 0.15s, color 0.15s; 
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color:rgba(78, 105, 88, 0.779);
+  transform: translateY(4px); 
+}
+
+.mapIMG {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.buttonLINK{
+  text-decoration: none;
+  color: rgba(247, 242, 242, 0.782);
+}
+
 
 .linkstyle {
   color: #245885; /*Consider changing to rgba (97, 129, 109, 0.538)*/
@@ -55,7 +127,6 @@ p {
     padding: 8px;
     color: black;
     content: "/\00a0";
-
 }
 
 .breadcrumb li a {
@@ -74,16 +145,13 @@ p {
     color: rgba(255, 255, 255, 0.979);
 }
 
-/* Make common header styles into own paragraph */
-
 h1 {
   position: absolute;
   top: 40%;
   left: 50%;
   padding: 30px;
   transform: translate(-50%, -50%);
-  font-family: helvetica;
-  font-size: 8vw; /* From w3school, considering to try dvh or lvh.*/
+  font-size: 8vw;
   font-weight: 200;  
 }
 
@@ -93,16 +161,16 @@ h2 {
   left: 50%;
   padding-top: 5vw;
   transform: translate(-50%, -50%);
-  font-family: helvetica;
   font-size: 3vw;
   font-weight: 100;
-
 }
 
-h3 {
-  font-family: helvetica;
+h3 , h4 , h5, h6{
   font-size: 20px;
-  font-weight: 300;
+  font-weight: bold;
+}
+
+h6{
   text-align: center;
 }
 
