@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-
+<body>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>Exam 2024</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/836cdb6e60.js" crossorigin="anonymous"></script> <!-- Source for icons-->
+
 
     <header> 
         <img class = "oslometIMG" src="media/oslomet.PNG">
@@ -14,15 +14,20 @@
             
             <ul class="nav">
 
-                <li>SØK</li> <img src="media/search-icon.svg" style="width:0.9rem"> <!--kit.fontawesome-->
-                <li>MENY</li> <i class="fas fa-bars"></i> <!--kit.fontawesome-->
+                <li><div class="search">SØK <input type="text" class="input" placeholder="Søk...">
+                    <button class="btn"><i class="fas fa-search"></i></button>
+                  </div></li>
+                <li class="dropdown">MENY <i class="fas fa-bars"></i>
+                    <div class="dropdown-content">
+                        <a href="activity.html">Activity</a>
+                         <a href="github.html">GitHub</a>
+                        <a href="#">Accessibility</a>
+                  </li>
             </ul>
         </nav>
-        <div>
-            
-            <ul>
-                <li>Studieoversikt</li>
-            </ul>
+        <div class="studieoversikt">
+            <a href="https://www.oslomet.no/studier/studieoversikt"><img src="media/back-button.png" alt="back-icon">Studieoversikt</a> 
+                <!-- flaticon.com-->
         </div>
         </header>
 
@@ -145,9 +150,55 @@
   </table>
 
 </main>
+
+<script>
+document.querySelector('.btn').addEventListener('click', function() {
+  const search = document.querySelector('.search');
+  search.classList.toggle('active'); // Toggle the 'active' class on click
+});
+</script>
+
 </body>
 
 <footer>
 <h2>Hold deg oppdatert på hva som skjer på OsloMet.</h2>
+<a href="https://www.oslomet.no/nyhetsbrev" class="newsletter-link">Abonner på vårt nyhetsbrev!</a>
+<br>
+<br>
+<hr class="solid">
+ <!-- Husk å sette inn linje og endre link ovenfor-->
+<br>
+<div class="schoolbanner">
+<h3 class="bold-text">OSLO METROPOLITAN UNIVERSITY</h3>
+<h3 class="normal-text">STORBYUNIVERSITETET</h3>
+</div>
+<br>
+<div class="contact-info"> 
+<p>Postboks 4, St. Olavs plass</p>
+<p>0130 Oslo</p>
+<p>Tlf.: 67 23 50 00</p>
+<a href="#" class="contact-link">Kontakt oss</a>
+</div>
+<br>
+<br>
+<div class="footer-links">
+    <a href="https://www.oslomet.no/en">English</a>
+    <a href="https://www.oslomet.no/alumni">Alumni</a>
+    <a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a>
+    <a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementsoversikt</strong></a>
+    <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a>
+    <a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
+    <a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a>
+    <a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernserklæring og informasjonskapslar</strong></a>
+    <a href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a>
+    <a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a>
+    <a href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a>
+</div>
+<div class="footer-icons">
+    <a href="https://www.facebook.com/oslomet/"><img src="media/facebook-3.png" alt="Facebook Icon">Facebook</a>
+    <a href="https://x.com/oslomet"><img src="media/twitter.png" alt="Twitter Icon">X (Twitter)</a>
+    <a href="https://no.linkedin.com/school/oslomet/"><img src="media/linkedin.png" alt="LinkedIn Icon">LinkedIn</a>
+    <a href="https://www.instagram.com/oslomet/?hl=nb"><img src="media/instagram.png" alt="Instagram Icon">Instagram</a>
+</div>
 </footer>
 </html>

@@ -23,11 +23,7 @@ header {
     padding: 10px;
 }
 
-footer {
-    background-color: rgb(255, 213, 0);
-    position: relative;
-    padding: 10px;
-}
+
 
 .oslometIMG {
     position: absolute;
@@ -37,25 +33,105 @@ footer {
     padding: 0;
     height: auto;
 }
-
 .nav {
     text-align: right;
     padding-right: 20px;
 }
+  
 
 ul {
     list-style-type: none;
     margin-top:0px;
-
-
     padding: 0;
     margin-top: 0;
 }
 
 li {
     display: inline-block;
-    margin: 20px;
+    margin: 20px; 
 }
+
+.search {
+    position: relative;
+    display: inline-block;
+}
+.search .input {
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 5px;
+    height: 15px;
+    width: 0px;  /* Initially width is 0 to hide input field */
+    opacity: 0;  /* Make input invisible */
+    transition: width 0.3s ease, opacity 0.3s ease;  /* Animating width and opacity */
+}
+.btn {
+    background-color: rgb(255, 213, 0);
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+.search:hover .input {
+    width: 200px; /* Expand the input field */
+    opacity: 1;  /* Make input field visible */
+}
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color: #333; 
+    padding-right: 50px; 
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto; 
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    text-align: left;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Showing dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .studieoversikt a {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+  }
+
+  .studieoversikt img {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+  }
 
 .BachelorrogramTable {
     border-spacing: 30px 10px;
@@ -96,4 +172,108 @@ iframe {
     margin: auto;
     display: block;
     
+}
+
+footer {
+    background-color: rgb(255, 213, 0);
+    position: relative;
+    padding: 10px;
+    text-align: left;
+}
+
+.newsletter-link {
+    display: inline-block;           
+    background-color: #000;          
+    color: #fff;                     
+    padding: 20px 30px;              
+    text-decoration: none;                         
+    text-align: center;     
+    font-weight: bold; 
+    font-size: 16px;        
+    border-radius: 5px;              
+    margin-bottom: 10px;             
+}
+
+.newsletter-link:hover {
+    background-color: #333;          
+}
+
+hr.solid {
+border-top: 1px solid black;
+border-bottom: black;
+}
+
+.schoolbanner {
+    text-align: left;
+    color: black;
+    font-size: 14px;
+}
+.bold-text {
+   margin: 0;
+   font-weight: bold;
+}
+.normal-text {
+   margin: 0;
+   font-weight: normal;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+.contact-info p {
+    margin: 4px 0;
+}
+.contact-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.contact-link:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+}
+.footer-links a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.footer-icons a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footer-icons a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
 }

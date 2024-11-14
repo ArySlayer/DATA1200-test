@@ -1,22 +1,72 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 body {
     margin: 0;
-}
-
-
-header {
-    padding: 20px;
-    background-color: aquamarine;
-    position: relative;
-}
-
-h1 {
-    text-align: center;
 }
 
 h2, p {
     padding-left: 2rem;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between title and menu */
+    padding: 10px;
+    background-color: aquamarine;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1; /* Allows the title to occupy center space */
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    padding-right: 50px; 
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Place the dropdown below the menu */
+    left: 0;
+    right: auto;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
