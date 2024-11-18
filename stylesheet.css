@@ -18,11 +18,14 @@ body {
 }
 
 header {
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(136, 172, 224);
     position: relative;
     padding: 10px;
 }
 
+h1 {
+text-align: center;
+}
 
 
 .oslometIMG {
@@ -66,7 +69,7 @@ li {
     transition: width 0.3s ease, opacity 0.3s ease;  /* Animating width and opacity */
 }
 .btn {
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(136, 172, 224);
     border: 0;
     cursor: pointer;
     font-size: 18px;
@@ -142,7 +145,11 @@ li {
 .BachelorrogramTable tr, td {
     font-size: 25px;
     padding: 20px 10px;
-    border-top: 1px solid black;
+
+}
+.BachelorrogramTable td {
+    background-color: rgb(136, 172, 224);
+    box-shadow: 8px 8px 4px gray;
 }
 
 @media (orientation: portrait) {
@@ -215,12 +222,14 @@ iframe {
 /* Nedtrekks listene */
 .info {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 10px;
     line-break: strict;
-}
+    box-shadow: 8px 8px 4px gray;
+    background-color: #F5FBFF;
+    }
 
 .nedtrekkInnformasjon {
-    margin-bottom: 10px;
+    
 }
 
 details {
@@ -232,9 +241,10 @@ summary {
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(136, 172, 224);
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 summary::before {
@@ -270,7 +280,7 @@ a:hover {
 }
 
 footer {
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(173, 216, 230);
     position: relative;
     padding: 10px;
     text-align: left;
