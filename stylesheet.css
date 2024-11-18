@@ -221,12 +221,9 @@ iframe {
 
 .nedtrekkInnformasjon {
     margin-bottom: 10px;
-    padding: 10px;
-    background-color: rgb(173, 175, 255);
 }
 
 details {
-    margin: 10px;
 }
 
 summary {
@@ -235,6 +232,9 @@ summary {
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
+    background-color: rgb(255, 213, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 summary::before {
