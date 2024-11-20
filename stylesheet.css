@@ -113,10 +113,13 @@ li {
     padding: 10px 15px;
     text-decoration: none;
     display: block;
+    font-weight: normal;
   }
   
   .dropdown-content a:hover {
     background-color: #f0f0f0;
+    text-decoration: none; 
+    font-weight: bold;
   }
   
   /* Showing dropdown on hover */
