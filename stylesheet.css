@@ -383,7 +383,27 @@ border-bottom: black;
     height: 30px;
 }
 
+.study-place {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.education-questions {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
 .manager-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.videre-interesse-title {
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 10px;
@@ -391,14 +411,15 @@ border-bottom: black;
 
 .manager-profile {
     border: 1px solid #ddd;
-    padding: 20px;
-    width: 600px;
+    padding: 10px;
+    width: 100%;
     text-decoration: none;
     color: inherit;
     display: flex;
     align-items: center;
     transition: background-color 0.3s; 
-    justify-content: space-between;  
+    justify-content: space-between; 
+    margin:0 auto;
 }
 
 .manager-profile:hover {
@@ -406,8 +427,8 @@ border-bottom: black;
 }
 
 .manager-image img {
-    width: 162px;
-    height: 216px;
+    width: 121px;
+    height: 162px;
     border-radius: 8px;
     margin-right: 20px;
 }
@@ -432,25 +453,30 @@ border-bottom: black;
 
 
 .card-container {
-margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    gap: 15px;
 }
 
 .card { 
-    display: block;
+    display: flex;
     width: 100%;
-    max-width: 600px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
     text-decoration: none;
     color: inherit;
     margin: auto;
+    gap: 15px;
+    align-items: center;
 }
 
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
