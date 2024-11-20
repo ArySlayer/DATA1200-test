@@ -383,41 +383,44 @@ border-bottom: black;
     height: 30px;
 }
 
-.manager-section {
+.manager.profile {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 400px;
+    text-decoration: none;
+    color: inherit;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     align-items: center;
-    margin: 20px auto;
-    max-width: 800px;
+    transition: background-color 0.3s;   
+}
+.manager.profile:hover {
+    background-color: #f0f0f0;
 }
 
 .manager-image img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .manager-info {
-    flex: 1;
-    min-width: 250px;
+    font-size: 14px;;
+   
 }
 
-.manager-info p {
-    margin: 5px 0;
+.manager-info strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
 }
 
-@media screen and (max-width: 768px) {
-    .manager-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .manager-image img {
-        margin: 0 auto;
-    }
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
+
 
 
 .card-container {
