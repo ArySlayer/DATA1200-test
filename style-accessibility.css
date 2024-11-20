@@ -1,0 +1,184 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    color: #000000;
+    background-color: #ffffff;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+h2, p {
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d4d;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 4px solid #006666;
+}
+header h1 {
+    font-size: 1.8rem;
+}
+header h1, .nav {
+    margin: 0;
+    display:inline-block;
+}
+
+.nav {
+    text-align: right;
+    font-size: 1.2rem;
+}
+  
+ul {
+    list-style-type: none;
+    margin-top:0px;
+    padding: 0;
+    margin-top: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 20px; 
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-dark, .btn-light
+{
+    height: 30px;
+    background-color: transparent; 
+    font-weight: bold;
+    border-radius: 8px;
+}
+.btn-dark {
+    color: #000000;
+    border: #000000 2px solid;
+}
+.btn-light {
+    color: #ffffff;
+    border: #ffffff 2px solid;
+}
+.btn-dark:hover {
+    background-color: black;
+    color: #ffffff;
+    border: #000000 2px solid;
+}
+
+.btn-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: #ffffff 2px solid;
+}
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color:#fff; 
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto; 
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    text-align: left;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+    text-decoration: none; 
+    font-weight: bold;
+  }
+  
+  /* Showing dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+main {
+    padding: 2rem;
+}
+
+section {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.link {
+    color:#0a45aa;
+    text-decoration: none;
+}
+.link:hover {
+    color:#0a45aa;
+    text-decoration: underline;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #006666;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.submit-btn {
+    height: 40px;
+    width: 80px;
+    background-color: #006666;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: #006666 2px solid;
+}
+.submit-btn:hover {
+    background-color: rgb(255, 102, 1); 
+    color: #ffffff;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em; 
+    display: none;
+}
+
+a:focus, input:focus {
+    outline: rgb(255, 102, 1) 3px solid;
+}
+
+footer p {
+    background-color: #004d4d;
+    border-top: 4px solid #006666;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
