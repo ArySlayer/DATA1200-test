@@ -282,6 +282,9 @@ a:hover {
     flex-direction: column;
 }
 
+
+
+
 footer {
     background-color: rgb(173, 216, 230);
     position: relative;
@@ -387,19 +390,36 @@ border-bottom: black;
 }
 
 .study-place {
+    display: block;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+.underline-text-place {
+    text-decoration: underline;
+    text-decoration-color:rgb(136, 172, 224);
+    text-decoration-thickness: 2px;
+    margin-bottom: 20px;
+}
+
 .education-questions {
+    display:block;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+.underline-text-q {
+    text-decoration: underline;
+    text-decoration-color:rgb(136, 172, 224);
+    text-decoration-thickness: 2px;
+    margin-bottom: 20px;
 }
 
 
 .manager-title {
+    display: block;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 10px;
@@ -408,7 +428,8 @@ border-bottom: black;
 .further-interests-title {
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .manager-profile {
