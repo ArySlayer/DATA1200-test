@@ -282,113 +282,6 @@ a:hover {
     flex-direction: column;
 }
 
-
-
-
-footer {
-    background-color: rgb(173, 216, 230);
-    position: relative;
-    padding: 10px;
-    text-align: left;
-}
-
-.newsletter-link {
-    display: inline-block;           
-    background-color: #000;          
-    color: #fff;                     
-    padding: 20px 30px;              
-    text-decoration: none;                         
-    text-align: center;     
-    font-weight: bold; 
-    font-size: 16px;        
-    border-radius: 5px;              
-    margin-bottom: 10px;             
-}
-
-.newsletter-link:hover {
-    background-color: #333;          
-}
-
-hr.solid {
-border-top: 1px solid black;
-border-bottom: black;
-}
-
-.schoolbanner {
-    text-align: left;
-    color: black;
-    font-size: 14px;
-}
-.bold-text {
-   margin: 0;
-   font-weight: bold;
-}
-.normal-text {
-   margin: 0;
-   font-weight: normal;
-}
-
-.contact-info {
-    text-align: left;
-    font-size: 16px;
-    color: black;
-}
-.contact-info p {
-    margin: 4px 0;
-}
-.contact-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-.contact-link:hover {
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 10px;
-}
-
-.footer-links a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none; 
-}
-.footer-links a:hover {
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-direction: column;
-    padding-top: 40px;
-}
-
-.footer-icons a {
-    color: black;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.footer-icons a:hover {
-    text-decoration: underline;
-}
-
-.footer-icons img {
-    width: 30px;
-    height: 30px;
-}
-
 .study-place {
     display: block;
     font-weight: bold;
@@ -524,3 +417,110 @@ border-bottom: black;
     color: #666;
 }
    
+
+
+footer {
+    background-color: rgb(173, 216, 230);
+    position: relative;
+    padding: 10px;
+    text-align: left;
+}
+
+.newsletter-link {
+    display: inline-block;           
+    background-color: #000;          
+    color: #fff;                     
+    padding: 20px 30px;              
+    text-decoration: none;                         
+    text-align: center;     
+    font-weight: bold; 
+    font-size: 16px;        
+    border-radius: 5px;              
+    margin-bottom: 10px;             
+}
+
+.newsletter-link:hover {
+    background-color: #333;          
+}
+
+hr.solid {
+border-top: 1px solid black;
+border-bottom: black;
+}
+
+.schoolbanner {
+    text-align: left;
+    color: black;
+    font-size: 14px;
+}
+.bold-text {
+   margin: 0;
+   font-weight: bold;
+}
+.normal-text {
+   margin: 0;
+   font-weight: normal;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+.contact-info p {
+    margin: 4px 0;
+}
+.contact-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.contact-link:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+}
+.footer-links a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.footer-icons a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footer-icons a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
