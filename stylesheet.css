@@ -240,6 +240,12 @@ iframe {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.semester p {
+    margin-left: 20px;
+}
+.semester {
+    margin-left: 40px;
+}
 
 summary {
     display: flex;
