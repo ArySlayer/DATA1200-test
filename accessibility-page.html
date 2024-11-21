@@ -45,12 +45,12 @@
         </section>
         <section id="contact-us" tabindex="0">
             <h3>Contact Us Here if Any Questions:</h3>
-            <form action="submit" method="post">
+            <form action="submit" method="post" autocomplete="on">
                 <label for="message">Type a Message:</label>
                 <input type="text" id="message" name="message" required aria-required="true">
                 <span class="error-message">This field is required. Please type a message.</span>
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required aria-required="true">
+                <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
                 <span class="error-message">Please enter a valid email address.</span>
                 <button type="submit" class="submit-btn">Submit</button>
             </form>
