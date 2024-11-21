@@ -20,10 +20,14 @@ header {
     color: #ffffff;
     padding: 1rem 2rem;
     border-bottom: 4px solid #006666;
+    display: flex;
+    justify-content: space-between; 
 }
 header h1 {
     font-size: 1.8rem;
+    padding: 1rem 2rem;
 }
+
 header h1, .nav {
     margin: 0;
     display:inline-block;
@@ -43,7 +47,14 @@ ul {
 
 li {
     display: inline-block;
-    margin: 20px; 
+    margin: 20px;
+}
+li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
 }
 
 .dark-mode {
@@ -58,28 +69,29 @@ li {
 
 .btn-dark, .btn-light
 {
-    height: 30px;
-    background-color: transparent; 
+    height: 30px;;   
     font-weight: bold;
     border-radius: 8px;
 }
 .btn-dark {
-    color: #000000;
-    border: #000000 2px solid;
-}
-.btn-light {
-    color: #ffffff;
-    border: #ffffff 2px solid;
-}
-.btn-dark:hover {
     background-color: black;
     color: #ffffff;
     border: #000000 2px solid;
 }
-
-.btn-light:hover {
+.btn-light {
     background-color: #ffffff;
     color: #000000;
+    border: #ffffff 2px solid;
+}
+.btn-dark:hover, .btn-light:hover {
+    background-color: transparent;
+}
+.btn-dark:hover {
+    color: #000000;
+    border: #000000 2px solid;
+}
+.btn-light:hover {
+    color: #ffffff;
     border: #ffffff 2px solid;
 }
 
@@ -122,21 +134,23 @@ li {
     display: block;
   }
 
-main {
-    padding: 2rem;
-}
-
 section {
-    padding: 15px;
-    border-radius: 10px;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+section:focus {
+    outline: 2px dashed #00f;
+    outline-offset: 5px;
 }
 
 .link {
-    color:#0a45aa;
+    color:#2546f0;
     text-decoration: none;
 }
 .link:hover {
-    color:#0a45aa;
     text-decoration: underline;
 }
 
@@ -151,10 +165,10 @@ input[type="text"], input[type="email"] {
 }
 .submit-btn {
     height: 40px;
-    width: 80px;
+    width: 100px;
     background-color: #006666;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
     border: #006666 2px solid;
@@ -181,4 +195,10 @@ footer p {
     margin: 0;
     text-align: center;
     color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
 }

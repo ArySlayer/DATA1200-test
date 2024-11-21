@@ -10,52 +10,58 @@
 </head>
 <body>
     <header>
+        
+        <h1>Accessibility Page</h1>
+        <nav aria-label="Site Navigation">
+            <ul class="nav">
+                <li><a href="#accessibility-info">Ensuring Accessibility</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
         <nav aria-label="Main Navigation">
-                <ul class="nav">
-                    
-                <h1>Accessibility Page</h1>
-            
-                    <li class="dropdown"> <i class="fas fa-bars"></i>
-                        <div class="dropdown-content">
-                            <a href="activity.html">Activity</a>
-                             <a href="github.html">GitHub</a>
-                             <a href="index.html">MatMod</a>
-                    </li>
-                    <button class="btn-dark" onclick="darkMode()">Darkmode</button>
-                    <button class="btn-light" onclick="lightMode()">LightMode</button>
-                </ul>
+            <ul class="nav">
+                <li class="dropdown"><i class="fas fa-bars"></i>
+                    <div class="dropdown-content">
+                        <a href="activity.html">Activity</a>
+                        <a href="github.html">GitHub</a>
+                        <a href="index.html">MatMod</a>
+                    </div>
+                </li>
+                 <button class="btn-dark" onclick="darkMode()">Darkmode</button>
+                 <button class="btn-light" onclick="lightMode()">LightMode</button>
+            </ul>
         </nav>
     </header>
-    
-   <main id="main-content" tabindex="-1" aria-labelledby="main-content">
 
-   <section id="accessibility-info">
+   <main id="main-content">
+
+        <section id="accessibility-info" tabindex="0">
             <h2>Ensuring Accessibility on Web Page</h2>
             <p>Our web page focuses on accessibility to serve all users, following central universal design principles, such as <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" class="link" aria-label="WCAG 2.1 Guidelines">WCAG 2.1 Guidelines</a> for accessibility regarding web content. Here are the main ways we achieve this:</p>
-           
- 
+            
+    
             <h3>How we ensure accessibility </h3>
             <p>We have used proper HTML tags to highlight the meaning, such as header, main, footer, to distuingish their role in the code. The main ways accessibility is ensured is by using simple and clear language with structured content for readability, enabling the choice of dark or light mode,using high color contrast colors for users with low vision, and providing alternativ text for images. We have used the button-attribute instead of the div-attribute for clickable elements to enable the use of external tools, such as screenreaders, without any problems. Additionaly, we have also made the interactive elements in this website easy to identify.</p>
 
-            <p>We have included ARIA (Accessible Rich Internet Applications), attributes such as <em>aria-required="true"</em>for accessibility if the required fields aren't visually obvious and for allowing error message updates in real-time. By following the <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" class="link" aria-label="WCAG 2.1 Guidelines">WCAG 2.1 Guidelines</a>, we ensure that our content's accessibility to users with various diabilities, for example auditory and visual impairments.</p>
-   </section>
+             <p>We have included ARIA (Accessible Rich Internet Applications), attributes such as <em>aria-required="true"</em>for accessibility if the required fields aren't visually obvious and for allowing error message updates in real-time. By following the <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" class="link" aria-label="WCAG 2.1 Guidelines">WCAG 2.1 Guidelines</a>, we ensure that our content's accessibility to users with various diabilities, for example auditory and visual impairments.</p>
+     </section>
 
-   <section id="contact-us">
-    <h3>Contact us here if any questions:</h3>
-    <form action="submit" method="post">
-        <label for="message">Type a message:</label>
-        <input type="text" id="message" name="message" required aria-required="true">
-        <span class="error-message">This field is required. Please type a message.</span>
-     <br>
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required aria-required="true">
-        <span class="error-message">Please enter a valid email-address.</span>
+        <section id="contact-us" tabindex="0">
+        <h3>Contact us here if any questions:</h3>
+            <form action="submit" method="post">
+                <label for="message">Type a message:</label>
+                <input type="text" id="message" name="message" required aria-required="true">
+                <span class="error-message">This field is required. Please type a message.</span>
+            <br>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <span class="error-message">Please enter a valid email-address.</span>
 
-        <button type="submit" class="submit-btn" onclick="errorMessage()">Submit</button>
-     <br>
-    <br>
-    </form>
-    </section>
+                <button type="submit" class="submit-btn">Submit</button>
+            <br>
+            <br>
+            </form>
+        </section>
     </main>
     
     <script>
