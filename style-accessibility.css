@@ -52,6 +52,24 @@ li a:hover {
     text-decoration: underline;
 }
 
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    padding: 1rem;
+    border: 2px #ddd solid;
+    border-radius: 5px;
+}
+section:focus {
+    outline: 2px bold
+    #00f;
+    outline-offset: 5px;
+}
+
  /* https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/*/
 .dark-mode {      
     background-color: black;
@@ -126,24 +144,6 @@ li a:hover {
 /* Showing dropdown-content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-main {
-    padding: 1rem;
-}
-
-section {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border: 2px #ddd solid;
-    border-radius: 5px;
-}
-section:focus {
-    outline: 2px bold
-    #00f;
-    outline-offset: 5px;
 }
 
 .link {
