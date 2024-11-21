@@ -154,6 +154,11 @@ section:focus {
     text-decoration: underline;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 form input[type="text"], form input[type="email"] {
     padding: 10px;
     width: 100%;
