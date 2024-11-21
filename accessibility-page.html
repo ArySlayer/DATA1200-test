@@ -10,7 +10,6 @@
 </head>
 <body>
     <header>
-        
         <h1>Accessibility Page</h1>
         <nav aria-label="Site Navigation">
             <ul class="nav">
@@ -34,7 +33,6 @@
     </header>
 
    <main id="main-content">
-
         <section id="accessibility-info" tabindex="0">
             <h2>Ensuring Accessibility on Web Page</h2>
             <p>Our web page focuses on accessibility to serve all users, following central universal design principles, such as <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" class="link" aria-label="WCAG 2.1 Guidelines">WCAG 2.1 Guidelines</a> for accessibility regarding web content. Here are the main ways we achieve this:</p>
@@ -46,19 +44,15 @@
              <p>We have included ARIA (Accessible Rich Internet Applications), attributes such as <em>aria-required="true"</em>for accessibility if the required fields aren't visually obvious and for allowing error message updates in real-time. By following the <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" class="link" aria-label="WCAG 2.1 Guidelines">WCAG 2.1 Guidelines</a>, we ensure that our content's accessibility to users with various diabilities, for example auditory and visual impairments. In addition, our website allows keyboard accesibility, by making the interactive elements operable using the keybord. We have created clear visible indicators, such as a blue focus outline, helping the user focus on current selected elements.  </p>
         </section>
         <section id="contact-us" tabindex="0">
-        <h3>Contact us here if any questions:</h3>
+            <h3>Contact Us Here if Any Questions:</h3>
             <form action="submit" method="post">
-                <label for="message">Type a message:</label>
+                <label for="message">Type a Message:</label>
                 <input type="text" id="message" name="message" required aria-required="true">
                 <span class="error-message">This field is required. Please type a message.</span>
-            <br>
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required aria-required="true">
-                <span class="error-message">Please enter a valid email-address.</span>
-
+                <span class="error-message">Please enter a valid email address.</span>
                 <button type="submit" class="submit-btn">Submit</button>
-            <br>  
-            <br>
             </form>
         </section>
     </main>
