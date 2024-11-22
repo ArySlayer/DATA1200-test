@@ -103,7 +103,7 @@ li {
     top: 100%;
     left: 0;
     right: auto; 
-    background-color: #fff;
+    background-color: #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 160px;
@@ -120,7 +120,7 @@ li {
   }
   
   .dropdown-content a:hover {
-    background-color: #f0f0f0;
+    background-color: #5f5f5f;
     text-decoration: none; 
     font-weight: bold;
   }
