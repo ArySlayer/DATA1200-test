@@ -18,9 +18,11 @@ body {
 }
 
 header {
-    background-color: rgb(136, 172, 224);
+    background-color: #004d4d;
     position: relative;
     padding: 10px;
+    border-bottom: 4px solid #006666;
+    color: #ffffff;
 }
 
 h1 {
@@ -69,7 +71,7 @@ li {
     transition: width 0.3s ease, opacity 0.3s ease;  /* Animating width and opacity */
 }
 .btn {
-    background-color: rgb(136, 172, 224);
+    background-color: #004d4d;
     border: 0;
     cursor: pointer;
     font-size: 18px;
@@ -77,6 +79,7 @@ li {
     height: 30px;
     width: 30px;
     transition: transform 0.3s ease;
+    color: #ffffff;
 }
 .btn:focus,
 .input:focus {
@@ -90,7 +93,7 @@ li {
   .dropdown {
     position: relative;
     display: inline-block;
-    color: #333; 
+    color: #ffffff; 
     padding-right: 50px; 
   }
   
@@ -109,7 +112,7 @@ li {
   }
   
   .dropdown-content a {
-    color: #333;
+    color: #ffff;
     padding: 10px 15px;
     text-decoration: none;
     display: block;
@@ -129,7 +132,7 @@ li {
 
   .studieoversikt a {
     font-weight: bold;
-    color: black;
+    color: #ffffff;
     text-decoration: underline;
   }
 
@@ -151,7 +154,7 @@ li {
 
 }
 .BachelorrogramTable td {
-    background-color: rgb(136, 172, 224);
+    background-color: #129c9c;
     box-shadow: 8px 8px 4px gray;
 }
 
@@ -253,7 +256,7 @@ summary {
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
-    background-color: rgb(136, 172, 224);
+    background-color: #129c9c;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -298,7 +301,7 @@ a:hover {
 
 
 footer {
-    background-color: rgb(173, 216, 230);
+    background-color: #004d4d;
     position: relative;
     padding: 10px;
     text-align: left;
