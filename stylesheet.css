@@ -8,18 +8,18 @@
 
 }
 /* Adjust the width of the main */
-main {
+.indexmain {
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
 }
 /*Basic body styling*/
-body {
+.indexbody {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 /*Basic header style: background color, spacing, text color, and a bottom-set border*/
-header {
+.indexheader {
     background-color: #004d4d;
     position: relative;
     padding: 10px;
@@ -28,7 +28,7 @@ header {
     color: #ffffff;
 }
 /*Allinging the main header center*/
-h1 {
+.indexh1 {
     text-align: center;
     font-size: 50px;
     padding: 10px;
@@ -43,20 +43,17 @@ h1 {
     padding: 0;
     height: auto;
 }
-/*Align the naviagtion to the right side*/
+/*Align the naviagtion to the right side, Resetting list styles and padding, margin-top*/
 .nav {
     text-align: right;
     padding-right: 20px;
-}
-  
-/*Resetting list styles and padding, margin-top*/
-ul {
     list-style-type: none;
     padding: 0;
     margin-top: 0;
 }
+  
 /*Adding space around list item, and arrange them horizontal*/
-li {
+.indexheader li {
     display: inline-block;
     margin: 20px; 
 }
@@ -165,7 +162,7 @@ li {
 }
 
 /* Font settings and text decoration*/
-h2 {
+.indexh2 {
     font-size: 25px;
     padding: 10px;
 }
@@ -270,7 +267,7 @@ a:hover {
 
 
 
-footer {
+.indexfooter {
     background-color: #004d4d;
     position: relative;
     padding: 10px;
