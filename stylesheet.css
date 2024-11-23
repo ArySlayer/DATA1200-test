@@ -1,35 +1,40 @@
+/* Index css code */
 
+/*Styling image*/
 .oslometIMG {
     /*position: fixed;*/
     bottom: 47vw; /* 10px from the bottom of the viewport */
     right: 90vw; /* 10px from the right of the viewport */
 
 }
-/* Adjust the content width for smaller screens */
-
+/* Adjust the width of the main */
 main {
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
 }
+/*Basic body styling*/
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*Basic header style: background color, spacing, text color, and a bottom-set border*/
 header {
     background-color: #004d4d;
     position: relative;
     padding: 10px;
+    width: 100%;
     border-bottom: 4px solid #006666;
     color: #ffffff;
 }
-
+/*Allinging the main header center*/
 h1 {
-text-align: center;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
 }
 
-
+/*Styling the oslometIMG image*/
 .oslometIMG {
     position: absolute;
     top: 1rem;
@@ -38,28 +43,29 @@ text-align: center;
     padding: 0;
     height: auto;
 }
+/*Align the naviagtion to the right side*/
 .nav {
     text-align: right;
     padding-right: 20px;
 }
   
-
+/*Resetting list styles and padding, margin-top*/
 ul {
     list-style-type: none;
-    margin-top:0px;
     padding: 0;
     margin-top: 0;
 }
-
+/*Adding space around list item, and arrange them horizontal*/
 li {
     display: inline-block;
     margin: 20px; 
 }
-
+/*Search bar with expanding input on hover*/
 .search {
     position: relative;
     display: inline-block;
 }
+
 .search .input {
     background-color: #fff;
     border: 0;
@@ -70,6 +76,7 @@ li {
     opacity: 0;  /* Make input invisible */
     transition: width 0.3s ease, opacity 0.3s ease;  /* Animating width and opacity */
 }
+/*Styling for search button, changing background color, removing border, changing cursor, editing size, editing position, adding transition, changing symbol color */
 .btn {
     background-color: #004d4d;
     border: 0;
@@ -81,23 +88,23 @@ li {
     transition: transform 0.3s ease;
     color: #ffffff;
 }
-.btn:focus,
-.input:focus {
+/*Removing outline*/
+.btn:focus, .input:focus {
     outline: none;
 }
+/*Expanding the input field, makeing input field visible */
 .search:hover .input {
-    width: 200px; /* Expand the input field */
-    opacity: 1;  /* Make input field visible */
+    width: 200px; 
+    opacity: 1;  
 }
-
-  .dropdown {
+/* Dropdown menu with hover functionality, and styling*/
+.dropdown {
     position: relative;
     display: inline-block;
     color: #ffffff; 
     padding-right: 50px; 
-  }
-  
-  .dropdown-content {
+}
+.dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
@@ -109,66 +116,55 @@ li {
     min-width: 160px;
     text-align: left;
     border-radius: 4px;
-  }
-  
-  .dropdown-content a {
+}
+.dropdown-content a {
     color: #ffff;
     padding: 10px 15px;
     text-decoration: none;
     display: block;
     font-weight: normal;
-  }
+}
   
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #5f5f5f;
     text-decoration: none; 
     font-weight: bold;
-  }
+}
   
-  /* Showing dropdown on hover */
-  .dropdown:hover .dropdown-content {
+/* Showing dropdown on hover */
+.dropdown:hover .dropdown-content {
     display: block;
   }
-
+/*Styling for study overview*/
   .studieoversikt a {
     font-weight: bold;
     color: #ffffff;
     text-decoration: underline;
   }
-
-  .studieoversikt img {
-    height: 15px;
-    width: 15px;
-    margin-right: 5px;
-  }
-
-.BachelorrogramTable {
+/*Adding style for bachleorprogramTable's table*/
+.BachelorprogramTable {
     border-spacing: 30px 10px;
     width: 100%;
     text-align: left;
 }
 
-.BachelorrogramTable tr, td {
+.BachelorprogramTable tr, td {
     font-size: 25px;
     padding: 20px 10px;
 
 }
-.BachelorrogramTable td {
+.BachelorprogramTable td {
     background-color: #129c9c;
     box-shadow: 8px 8px 4px gray;
 }
-
+/*Adjusting table layout*/
 @media (orientation: portrait) {
-    .BachelorrogramTable tr td {
+    .BachelorprogramTable tr td {
         display: block;
 }
 }
 
-/* Font settings */
-h1 {
-    font-size: 50px;
-    padding: 10px;
-}
+/* Font settings and text decoration*/
 h2 {
     font-size: 25px;
     padding: 10px;
@@ -176,80 +172,52 @@ h2 {
 .Studieoversikt {
     text-decoration: underline;
 }
+/*Styling for drop-down headers*/
 .NedtrekkOverskrifter {
     font-size: 20px;
     font-weight: bold;
 }
-iframe {
-    width: 80vw;
-    height: 45vw;
-    margin: auto;
-    display: block;
-}
-
-
+/*Style for text below Bachlorprogram*/
 .Underskrift {
     font-size: 15px;
     margin: zero;
 }
-.emnetabell {
-    width: 60%;
-    border-collapse: collapse;
-    margin: auto;
-    font-weight: 600;
-    text-align: center;
-    border: 1px solid black;
-
-    
-}
-.emnetabell td {
-    border: 1px solid black;
-    font-size: medium;
-}
-.emnetabell th {
-    background-color: gray;
-    border: 1px solid black;
-    vertical-align: top;
-    font-weight: 600;
-    text-align: center;
-}
-.emnetabell .poeng {
-    text-align: right;
-    vertical-align: bottom;
-    
+.nedtrekkInnformasjon {
 
 }
-.emnegruppe {
-    font-weight: 600;
-    text-align: center;
-    font-size: medium;
-    
+
+.underOverskrift {
+    font-weight: bold;
 }
-/* Nedtrekks listene */
+/* styling for drop-down list */
 .info {
     font-family: Arial, sans-serif;
     margin: 10px;
     line-break: strict;
     box-shadow: 8px 8px 4px gray;
     background-color: #F5FBFF;
-    }
+    
 
-.nedtrekkInnformasjon {
-    
-    
 }
 
+/*Margin for text elements in dropdown list*/
+details p, a{
+    margin-left: 10px;
+}
+
+/*Defining margins for Semester class*/
 .semester details {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 .semester p {
     margin-left: 20px;
+    max-width: 100%;
 }
 .semester {
     margin-left: 40px;
 }
-
+/*Making summary a flex container, allign content center, make cursor to pointer, changing font and padding*/
 summary {
     display: flex;
     align-items: center;
@@ -262,36 +230,39 @@ summary {
 
     
 }
-
+/*Make "Studiets oppbygning" dropdowns different color*/
+.headerForDropDown {
+    background-color: #075b5b;
+}
+/*Make closed dropdown symbol to "+"*/
 summary::before {
     content: "+";
     width: 20px;
     height: 20px;
-    color: black;
     font-weight: bold;
     margin-right: 10px;
     
 }
-
+/* Change "+" symbol to "-" when the details element is open*/
 details[open] summary::before {
     content: "-";
     padding-bottom: 7px;
     padding-left: 1px;
  
 }
-
+/*Basic syling for link*/
 a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9em;
 }
-
+/*When hover link make underline*/
 a:hover {
     text-decoration: underline;
 }
-/*Ferdig med listene*/
 
+/*Make item to flex box, with direction as column*/
 .nedtrekkArtikler{
     display: flex;
     flex-direction: column;
@@ -305,6 +276,9 @@ footer {
     position: relative;
     padding: 10px;
     text-align: left;
+    color: #fff; 
+    line-break: strict; 
+    width: 100%;
 }
 
 .newsletter-link {
@@ -331,12 +305,13 @@ border-bottom: black;
 
 .schoolbanner {
     text-align: left;
-    color: black;
+    color: #fff;  
     font-size: 14px;
 }
 .bold-text {
    margin: 0;
    font-weight: bold;
+   color: #fff;  
 }
 .normal-text {
    margin: 0;
@@ -346,15 +321,16 @@ border-bottom: black;
 .contact-info {
     text-align: left;
     font-size: 16px;
-    color: black;
+    color: #fff;  
 }
 .contact-info p {
     margin: 4px 0;
+    
 }
 .contact-link {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: #fff;  
 }
 .contact-link:hover {
     color: black;
@@ -370,7 +346,7 @@ border-bottom: black;
 }
 
 .footer-links a {
-    color: black;
+    color: #fff;  
     font-weight: bold;
     text-decoration: none; 
 }
@@ -389,7 +365,7 @@ border-bottom: black;
 }
 
 .footer-icons a {
-    color: black;
+    color: #fff;  
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -533,4 +509,4 @@ border-bottom: black;
     font-size: 14px;
     color: #666;
 }
-   
+/* End of Index css code */
