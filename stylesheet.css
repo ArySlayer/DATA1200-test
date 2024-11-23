@@ -191,15 +191,13 @@ h2 {
     font-family: Arial, sans-serif;
     margin: 10px;
     line-break: strict;
-    box-shadow: 8px 8px 4px gray;
     background-color: #F5FBFF;
     
-
 }
 
 /*Margin for text elements in dropdown list*/
 details p, a{
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 /*Defining margins for Semester class*/
@@ -214,6 +212,7 @@ details p, a{
 .semester {
     margin-left: 40px;
 }
+
 /*Making summary a flex container, allign content center, make cursor to pointer, changing font and padding*/
 summary {
     display: flex;
@@ -224,12 +223,16 @@ summary {
     background-color: #129c9c;
     padding-top: 20px;
     padding-bottom: 20px;
-
-    
+    border-radius: 25px;
+    box-shadow: 8px 8px 4px gray;
+}
+.nedtrekkArtikler {
+    border-radius: 25px;
 }
 /*Make "Studiets oppbygning" dropdowns different color*/
 .headerForDropDown {
-    background-color: #075b5b;
+    background-color: #26c387;
+    margin-bottom: 10px;
 }
 /*Make closed dropdown symbol to "+"*/
 summary::before {
@@ -245,7 +248,6 @@ details[open] summary::before {
     content: "-";
     padding-bottom: 7px;
     padding-left: 1px;
- 
 }
 /*Basic syling for link*/
 a {
