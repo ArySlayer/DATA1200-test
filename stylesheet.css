@@ -53,11 +53,11 @@
     text-decoration: underline;
     
 }
-@media (max-width: 600px) {
+/*Adjusting layout so it works on different displays*/
+@media (max-width: 400px) {
     .indexheader ul {
-        flex-direction: column; /* Switch to vertical layout */
-        align-items: flex-start; /* Align items to the start */
-        margin-top:10px;
+        flex-direction: column;
+        align-items: flex-start; 
     }
 }
 
