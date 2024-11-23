@@ -19,21 +19,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /*Basic header style: background color, spacing, text color, and a bottom-set border*/
-.indexheader, .indexhead {
+.indexheader{
     background-color: #004d4d;
     color: white;
     padding: 1rem 2rem;
     border-bottom: 4px solid #006666;
     height: 100%;
+    width: 100%;
 }
 /*Navigation menu*/
-.indexheadernav nav ul {
+.indexheader ul {
+    padding-top: 4px;
+    display: flex;
     list-style: none;
+    padding: 0;
 }
 
 .indexheader nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0;
+    padding: 0;
+    margin-left: 3%;
+    margin-top: 8px;
 }
 
 .indexheader nav ul li a {
@@ -47,6 +53,13 @@
     text-decoration: underline;
     
 }
+@media (max-width: 600px) {
+    .indexheader ul {
+        flex-direction: column; /* Switch to vertical layout */
+        align-items: flex-start; /* Align items to the start */
+        margin-top:10px;
+    }
+}
 
 /* Adjust the width of the main */
 .indexmain {
@@ -58,8 +71,10 @@
 /*Allinging the main header center*/
 .indexh1 {
     text-align: left;
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 0;
+    display: flex;
+    max-width: 90%;
 }
 
 /*Styling for study overview*/
