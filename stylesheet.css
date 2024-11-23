@@ -81,6 +81,7 @@ header nav ul li a:hover {
     color: #ffffff;
     text-decoration: underline;
   }
+
 /*Adding style for bachleorprogramTable's table*/
 .BachelorprogramTable {
     border-spacing: 30px 10px;
@@ -109,21 +110,14 @@ header nav ul li a:hover {
     font-size: 25px;
     padding: 10px;
 }
-.Studieoversikt {
-    text-decoration: underline;
-}
-/*Styling for drop-down headers*/
-.NedtrekkOverskrifter {
-    font-size: 20px;
-    font-weight: bold;
-}
+
 /*Style for text below Bachlorprogram*/
-.Underskrift {
+.undertext {
     font-size: 15px;
     margin: zero;
 }
 
-.underOverskrift {
+.underheading {
     font-weight: bold;
 }
 /* styling for drop-down list */
@@ -207,8 +201,6 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-
-
 
 
 .indexfooter {
