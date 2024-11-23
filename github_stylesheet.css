@@ -1,72 +1,83 @@
-       body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
+.github {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
 
-        header {
-            background-color: #004d4d;
-            color: white;
-            padding: 1rem 2rem;
-            border-bottom: 4px solid #006666;
-        }
+.github main {
+    padding: 10rem;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
+.github header {
+    background-color: #004d4d;
+    color: white;
+    padding: 1rem 2rem;
+    border-bottom: 4px solid #006666;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+.github header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
+.github nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.github nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+.github nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        main {
-            padding: 2rem;
-        }
+.github nav ul li a:hover {
+    text-decoration: underline;
+}
 
-        h2 {
-            color: #004d4d;
-        }
-        footer p {
-            text-align: center;
-        }
+.github main {
+    padding: 2rem;
+}
 
-        .box {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
+.github h2 {
+    color: #004d4d;
+}
 
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
+.github footer p {
+    text-align: center;
+}
 
-        .image-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
+.github .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.github .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.github .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.github .mainbox { /* Centers the content */
+    max-width: 1800px;
+    margin: 0 auto; /* Centers the content */
+    padding: 0 1rem; /* Adds some padding for smaller screens */
+}
