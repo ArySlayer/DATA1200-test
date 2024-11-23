@@ -26,16 +26,9 @@
     border-bottom: 4px solid #006666;
     height: 100%;
 }
-.indexheader .StudyOverveiw {
-    margin-left: 0px;
-    margin-bottom: 10px;
-    margin-top: 0;
-    color: #ffffff;
-}
 /*Navigation menu*/
-.indexheadernav ul {
+.indexheadernav nav ul {
     list-style: none;
-    padding: 0;
 }
 
 .indexheader nav ul li {
@@ -47,10 +40,12 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    margin-left: 0;
 }
 
 .indexheader nav ul li a:hover {
     text-decoration: underline;
+    
 }
 
 /* Adjust the width of the main */
