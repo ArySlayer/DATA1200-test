@@ -157,7 +157,7 @@ li {
     background-color: #129c9c;
     box-shadow: 8px 8px 4px gray;
 }
-/*Adjusting table layout*/
+/*Adjusting table layout so it works on different displays*/
 @media (orientation: portrait) {
     .BachelorprogramTable tr td {
         display: block;
