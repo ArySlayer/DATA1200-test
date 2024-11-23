@@ -5,13 +5,13 @@
     /*position: fixed;*/
     bottom: 47vw; /* 10px from the bottom of the viewport */
     right: 90vw; /* 10px from the right of the viewport */
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    margin: 0;
+    padding: 0;
+    height: auto;
 
-}
-/* Adjust the width of the main */
-.indexmain {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 20px;
 }
 /*Basic body styling*/
 .indexbody {
@@ -21,117 +21,48 @@
 /*Basic header style: background color, spacing, text color, and a bottom-set border*/
 .indexheader {
     background-color: #004d4d;
-    position: relative;
-    padding: 10px;
-    width: 100%;
+    color: white;
+    padding: 1rem 2rem;
     border-bottom: 4px solid #006666;
-    color: #ffffff;
+    height: 100%;
 }
+/*Navigation menu*/
+.indexheadernav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.indexheader nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.indexheader nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.indexheader nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Adjust the width of the main */
+.indexmain {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
 /*Allinging the main header center*/
 .indexh1 {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     padding: 10px;
 }
 
-/*Styling the oslometIMG image*/
-.oslometIMG {
-    position: absolute;
-    top: 1rem;
-    left: 0.5rem;
-    margin: 0;
-    padding: 0;
-    height: auto;
-}
-/*Align the naviagtion to the right side, Resetting list styles and padding, margin-top*/
-.nav {
-    text-align: right;
-    padding-right: 20px;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-}
-  
-/*Adding space around list item, and arrange them horizontal*/
-.indexheader li {
-    display: inline-block;
-    margin: 20px; 
-}
-/*Search bar with expanding input on hover*/
-.search {
-    position: relative;
-    display: inline-block;
-}
-
-.search .input {
-    background-color: #fff;
-    border: 0;
-    font-size: 18px;
-    padding: 5px;
-    height: 15px;
-    width: 0px;  /* Initially width is 0 to hide input field */
-    opacity: 0;  /* Make input invisible */
-    transition: width 0.3s ease, opacity 0.3s ease;  /* Animating width and opacity */
-}
-/*Styling for search button, changing background color, removing border, changing cursor, editing size, editing position, adding transition, changing symbol color */
-.btn {
-    background-color: #004d4d;
-    border: 0;
-    cursor: pointer;
-    font-size: 18px;
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    transition: transform 0.3s ease;
-    color: #ffffff;
-}
-/*Removing outline*/
-.btn:focus, .input:focus {
-    outline: none;
-}
-/*Expanding the input field, makeing input field visible */
-.search:hover .input {
-    width: 200px; 
-    opacity: 1;  
-}
-/* Dropdown menu with hover functionality, and styling*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-    color: #ffffff; 
-    padding-right: 50px; 
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: auto; 
-    background-color: #000000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 160px;
-    text-align: left;
-    border-radius: 4px;
-}
-.dropdown-content a {
-    color: #ffff;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    font-weight: normal;
-}
-  
-.dropdown-content a:hover {
-    background-color: #5f5f5f;
-    text-decoration: none; 
-    font-weight: bold;
-}
-  
-/* Showing dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
 /*Styling for study overview*/
   .studieoversikt a {
     font-weight: bold;
