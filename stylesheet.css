@@ -358,7 +358,7 @@ border-bottom: black;
 .manager-profile {
     border: 1px solid #ddd;
     padding: 10px;
-    width: 100%;
+    max-width: 100%;
     text-decoration: none;
     color: inherit;
     display: flex;
