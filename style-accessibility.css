@@ -61,6 +61,10 @@ header .nav a:hover {
     text-decoration: underline;
 }
 
+header nav a.active {
+    text-decoration: underline;
+  }
+
 .mode-switch {
     justify-content: center;
 }
