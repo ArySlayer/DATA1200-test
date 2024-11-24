@@ -428,7 +428,7 @@ border-bottom: black;
 /*general styling for the education program cards, deciding for example backgroud color, size, flex, and shape. */
 .program-info { 
     display: flex;
-    width: 100%;
+    width: 95%;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
