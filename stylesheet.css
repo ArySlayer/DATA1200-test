@@ -5,6 +5,11 @@
     box-sizing: border-box;
   }
 /* line-height, font-size, color-contrast in body, and padding around main content following WCAG-recommentations for better visibility and therefore also accessibility*/
+main { /*adds max width to all elements */
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Adds some padding for smaller screens */
+}
 .body {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
@@ -12,9 +17,6 @@
     color: #000000;
     background-color: #ffffff;
     line-height: 1.6;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 0 1rem; /* Adds some padding for smaller screens */
 }
 
 .header {
@@ -25,7 +27,6 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    width: 100%;
 }
 .header .h1 {
     padding: 1rem 2rem;
@@ -696,7 +697,14 @@ a:focus, input:focus, .WCAG-link:hover {
     border-radius: 5px;
   }
   
-
+  /*Header display for narrow screens*/
+  @media screen and (max-width:500px) {
+    .activity header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
     .activity h1 {
       padding:5px;
     }
