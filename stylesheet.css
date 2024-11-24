@@ -322,7 +322,7 @@ border-bottom: black;
 
 .underline-text-place {
     text-decoration: underline;
-    text-decoration-color:rgb(136, 172, 224);
+    text-decoration-color:#129c9c;
     text-decoration-thickness: 2px;
     margin-bottom: 20px;
 }
@@ -336,7 +336,7 @@ border-bottom: black;
 
 .underline-text-q {
     text-decoration: underline;
-    text-decoration-color:rgb(136, 172, 224);
+    text-decoration-color: #129c9c;
     text-decoration-thickness: 2px;
     margin-bottom: 20px;
 }
@@ -359,7 +359,7 @@ border-bottom: black;
 .manager-profile {
     border: 1px solid #ddd;
     padding: 10px;
-    width: 100%;
+    max-width: 100%;
     text-decoration: none;
     color: inherit;
     display: flex;
