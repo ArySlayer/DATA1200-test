@@ -26,6 +26,7 @@
     border-bottom: 4px solid #006666;
     height: 100%;
 }
+
 .indexheader .StudyOverveiw {
     margin-left: 0px;
     margin-bottom: 10px;
@@ -57,7 +58,7 @@
     margin: 0;
 }
 
-header nav ul li a:hover {
+.indexheader nav ul li a:hover {
     text-decoration: underline;
 }
 
