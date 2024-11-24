@@ -218,3 +218,54 @@ footer {
 }
 /* End of Accessibility css */
 
+
+.indexheader, .indexhead {
+    background-color: #004d4d;
+    color: white;
+    padding: 1rem 2rem;
+    border-bottom: 4px solid #006666;
+    height: 100%;
+}
+
+.indexheader .StudyOverveiw {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.indexheader nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.indexheader nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.indexheader nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.indexheader nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust the width of the main */
+.indexmain {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+/*Allinging the main header center*/
+.indexh1 {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
