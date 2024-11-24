@@ -464,40 +464,9 @@ border-bottom: black;
     padding: 2rem;
 }
 
-
-.github header {
-    background-color: #004d4d;
-    color: white;
-    padding: 1rem 2rem;
-    border-bottom: 4px solid #006666;
-}
-
 .github header h1 {
     margin: 0;
     font-size: 1.8rem;
-}
-
-/*navbar styling */
-.github nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.github nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.github nav ul li a { 
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0;
-}
-
-.github nav ul li a:hover {
-    text-decoration: underline;
 }
 
 .github h2 {
