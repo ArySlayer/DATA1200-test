@@ -1,22 +1,9 @@
 
-/*Styling image*/
-.oslometIMG {
-    /*position: fixed;*/
-    bottom: 47vw; /* 10px from the bottom of the viewport */
-    right: 90vw; /* 10px from the right of the viewport */
-    position: absolute;
-    top: 1rem;
-    left: 0.5rem;
-    margin: 0;
-    padding: 0;
-    height: auto;
-
-}
 
 /* Start of shared basic css for the websites*/
 
 /* line-height, font-size, color-contrast in body, and padding around main content following WCAG-recommentations for better visibility and therefore also accessibility*/
-body {
+.body {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -25,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-header {
+.header {
     background-color: #004d4d;
     color: #ffffff;
     padding: 1rem 2rem;
@@ -34,19 +21,19 @@ header {
     justify-content: space-between; 
     align-items: center;
 }
-header h1 {
+.header .h1 {
     padding: 1rem 2rem;
     font-weight: 100;
     font-size: 2rem;
 }
   
-header .nav ul{
+.header .nav ul{
     display: flex;
     list-style-type: none;
     text-align: center;
    }
   
- header .nav a {
+ .header .nav a {
     flex:1;
     padding: 1vw;
     text-decoration: none;
@@ -54,31 +41,31 @@ header .nav ul{
   }
   
   @media screen and (max-width:500px) {
-     header {
+     .header {
       display: flex;
       flex-direction: column;
       text-align: center;
     }
   
-     header .nav a {
+     .header .nav a {
       font-size: 1rem;
     }
   }
 
-header .nav a {
+.header .nav a {
     color: #ffffff;
     text-decoration: none;
 }
 
-header .nav a:hover {
+.header .nav a:hover {
     text-decoration: underline;
 }
 
-main {
+.main {
     padding: 1.5rem;
 }
 
-footer {
+.footer {
     background-color: #004d4d;
     border-top: 4px solid #006666;
     padding: 1rem;
@@ -91,17 +78,17 @@ footer {
 /* Start of special Index-related css code */
 
 /*Navigation menu*/
-header nav ul {
+.header .nav ul {
     list-style: none;
     padding: 0;
 }
 
-header nav ul li {
+.header .nav ul li {
     display: inline;
     margin-right: 15px;
 }
 
-header nav ul li a {
+.header .nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -109,7 +96,7 @@ header nav ul li a {
     margin: 0;
 }
 
-header nav ul li a:hover {
+.header .nav ul li a:hover {
     text-decoration: underline;
 }
 
@@ -121,18 +108,18 @@ header nav ul li a:hover {
   }
 
 /*Adding style for bachleorprogramTable's table*/
-.BachelorprogramTable {
+ .BachelorprogramTable {
     border-spacing: 30px 10px;
     width: 100%;
     text-align: left;
 }
 
-.BachelorprogramTable tr, td {
+ .BachelorprogramTable .tr, .td {
     font-size: 25px;
     padding: 20px 10px;
 
 }
-.BachelorprogramTable td {
+.BachelorprogramTable .td {
     background-color: #129c9c;
     box-shadow: 8px 8px 4px gray;
 }
@@ -169,7 +156,7 @@ h2 {
 }
 
 /*Margin for text elements in dropdown list*/
-details p, a{
+details p, .body a{
     margin-left: 30px;
 }
 
@@ -224,14 +211,14 @@ details[open] summary::before {
     padding-left: 1px;
 }
 /*Basic syling for link*/
-a {
+.body a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9em;
 }
 /*When hover link make underline*/
-a:hover {
+.body a:hover {
     text-decoration: underline;
 }
 
@@ -258,7 +245,7 @@ a:hover {
  background-color: #333;          
 }
 
-hr.solid {
+.body hr.solid {
 border-top: 1px solid black;
 border-bottom: black;
 }
@@ -453,9 +440,8 @@ border-bottom: black;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 /* hover effect for links inside the cards*/
-a:hover {
+.body a:hover {
     text-decoration: underline;
-
 }
 
 /* styling for content inside cards*/
@@ -520,7 +506,7 @@ a:hover {
     text-decoration: underline;
   }
 
-section {
+.body section {
     margin-bottom: 2rem;
     margin-top: 2rem;
     background-color: transparent;
@@ -528,7 +514,7 @@ section {
     border: 2px #ddd solid;
     border-radius: 5px;
 }
-section:focus {
+.body section:focus {
     outline: 2px bold
     #00f;
     outline-offset: 5px;
@@ -581,6 +567,7 @@ section:focus {
     text-decoration: none;
 }
 
+
 img {
     width: 100%;
     height: auto;
@@ -621,3 +608,303 @@ form input[type="text"], form input[type="email"] { /* Styling the input forms. 
 a:focus, input:focus, .WCAG-link:hover { 
     outline: rgb(255, 102, 1) 3px solid; 
 }
+
+/*CSS for activity, sorted by sections. */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /*Body-tag for activity page*/
+  .activity {
+      margin:0;
+      background-color:#dadada;
+      font-family: helvetica;
+  }
+  
+  /*main-tag in activity page*/
+  .activity-main{
+    margin: 7vw;
+    margin-top: 0;
+  }
+  
+  /*Flexbox for activity page header*/
+  .activity header {
+    margin: 15px 0px 15px 0px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#dadada;
+   }
+  
+   .activity h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    color: rgb(38, 47, 39);
+    margin: 0px 0px 0px 5px;
+   }
+  
+   .activity nav ul{
+    display: flex;
+    list-style-type: none;
+   }
+  
+  .activity nav a {
+    flex:1;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1vw;
+    text-decoration: none;
+    font-size: 1vw;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width:500px) {
+    .activity header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .activity h1 {
+      padding:5px;
+    }
+  
+    .activity nav a {
+      font-size: 3vw;
+      padding: 5px;
+    }
+  }
+  
+  .activity nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Adding a color to the active/current link */
+  .activity nav a.active {
+    background-color: rgba(99, 134, 108, 0.659);
+    color: white;
+  }
+  
+  .activity h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    font-size: 8vw;
+    font-size: 8vw;
+    font-weight: 200;  
+  }
+  
+  .activity h3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    padding-top: 5vw;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  
+  .activity h4, h5 , h6, .h7 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(38, 47, 39);
+    margin-bottom:0;
+  }
+  
+  /*Container for main image, based on example from w3schools */
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.979);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .img-container img {
+    border-radius: 5px;
+  }
+  
+  .img-credits {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 7px;
+  }
+  
+  .img-gallery {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /*Style for each image box*/
+  .img-gallery div{
+    flex:1;
+    align-items: center;
+    box-shadow: rgb(107, 103, 103) 2px 2px 7px;
+    border: 2px solid #ccc;
+    border-bottom: 0px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 100%;
+  }
+  
+  /*size for the rest of the pictures*/
+  .img-gallery img, .gallery img, .grid-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /*First article*/
+  .about-activity{
+    display:flex;
+    flex-direction: row;
+    align-items: top;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .about-activity{
+      display:grid;
+      align-items: center;
+    }
+  }
+  
+  /*Information table*/
+  .about-activity .infobox {
+    flex:1;
+    padding: 3vw; 
+    border-spacing: 10px;
+    margin: 3vw;
+    border-radius: 15px;
+    background-color: rgba(97, 129, 109, 0.542);
+    box-shadow: 2px 2px 7px rgb(107, 103, 103);
+    color: rgb(247, 242, 242);
+  }
+  
+  .activity-text {
+    flex: 2;
+    width: 90%;
+    text-align: justify;
+    margin: 3vw;
+    border-radius: 15px;
+  }
+  
+  .about-activity a {
+    color: #285b88;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  
+  .about-activity a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  
+  /*For article two*/
+  .grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 30px;
+   align-items:end;
+   padding-bottom: 30px;
+   padding-top: 0;
+  }
+  
+  @media screen and (max-width: 500px) {
+  
+    .grid-container {
+      display:inline-block;
+    }
+  }
+  
+    .grid-container section {
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   .grid-container a {
+    text-decoration: none;
+    color: rgba(247, 242, 242, 0.782);
+    margin-top: 20px;
+    padding: 10px; 
+  }
+  
+   .grid-container span {
+    padding: 10px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:50%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: rgb(97, 129, 109);
+    color: rgba(247, 242, 242, 0.782);
+    border: none;
+    box-shadow: 2px 2px 7px rgb(107, 103, 103);
+    transition: background-color 0.15s; 
+  }
+  
+   .grid-container span:hover{
+    cursor: pointer;
+    background-color:rgba(78, 105, 88, 0.779);
+    transform: translateY(4px); 
+  }
+  
+   /*taken from w3schools*/
+   .gallery {
+    border: 1px solid #ccc;
+    box-shadow: rgb(107, 103, 103) 2px 2px 7px;
+    border-radius: 5px;
+    transform: border 0.15s;
+  }
+  
+   .gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  .responsive .desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    margin-top: 20px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+ .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+ .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .activity-footer {
+    text-align: center;
+    background-color: #dadada;
+  }  

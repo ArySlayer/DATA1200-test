@@ -123,7 +123,7 @@
   border-radius: 5px;
 }
 
-.credits {
+.img-credits {
   position: absolute;
   bottom: 8px;
   right: 16px;
@@ -169,7 +169,7 @@
 }
 
 /*Information table*/
-.infobox {
+.about-activity .infobox {
   flex:1;
   padding: 3vw; 
   border-spacing: 10px;
@@ -216,7 +216,7 @@
   }
 }
 
-.grid-container section {
+  .grid-container section {
   display:flex;
   flex-direction: column;
   text-align: justify;
@@ -224,14 +224,14 @@
   justify-content: center;
 }
 
-.grid-container a {
+ .grid-container a {
   text-decoration: none;
   color: rgba(247, 242, 242, 0.782);
   margin-top: 20px;
   padding: 10px; 
 }
 
-.grid-container span {
+ .grid-container span {
   padding: 10px; 
   margin-top: 20px;
   margin-bottom: 20px;
@@ -246,30 +246,30 @@
   transition: background-color 0.15s; 
 }
 
-.grid-container span:hover{
+ .grid-container span:hover{
   cursor: pointer;
   background-color:rgba(78, 105, 88, 0.779);
   transform: translateY(4px); 
 }
 
  /*taken from w3schools*/
-.gallery {
+article .gallery {
   border: 1px solid #ccc;
   box-shadow: rgb(107, 103, 103) 2px 2px 7px;
   border-radius: 5px;
   transform: border 0.15s;
 }
 
-.gallery:hover {
+article .gallery:hover {
   border: 1px solid #777;
 }
 
-div.desc {
+article div.desc {
   padding: 15px;
   text-align: center;
 }
 
-.responsive {
+article .responsive {
   padding: 0 6px;
   margin-top: 20px;
   float: left;
@@ -277,14 +277,14 @@ div.desc {
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
+  article .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
+  article .responsive {
     width: 100%;
   }
 }
