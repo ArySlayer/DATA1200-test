@@ -28,20 +28,18 @@
   background-color:#dadada;
  }
 
- /*Page title, not h1*/
  .activity h1 {
   font-weight: 100;
-  font-size: 30px;
+  font-size: 2rem;
   color: rgb(38, 47, 39);
   margin: 0px 0px 0px 5px;
  }
 
-/*Flexbox for menu links*/
- .activity nav{
+ .activity nav ul{
   display: flex;
+  list-style-type: none;
  }
 
- /* taken from w3schools */
 .activity nav a {
   flex:1;
   display: inline-block;
@@ -60,7 +58,7 @@
     text-align: center;
   }
 
-  .activity header p {
+  .activity h1 {
     padding:5px;
   }
 
@@ -110,7 +108,7 @@
   margin-bottom:0;
 }
 
-/*Container for main image */
+/*Container for main image, based on example from w3schools */
 .img-container {
   position: relative;
   text-align: center;
@@ -123,6 +121,13 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+.credits {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 7px;
 }
 
 .img-gallery {
@@ -200,7 +205,8 @@
  grid-template-columns: 1fr 1fr;
  column-gap: 30px;
  align-items:end;
- padding: 20px;
+ padding-bottom: 30px;
+ padding-top: 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -221,9 +227,11 @@
 .grid-container a {
   text-decoration: none;
   color: rgba(247, 242, 242, 0.782);
+  margin-top: 20px;
+  padding: 10px; 
 }
 
-.grid-container button {
+.grid-container span {
   padding: 10px; 
   margin-top: 20px;
   margin-bottom: 20px;
@@ -238,7 +246,7 @@
   transition: background-color 0.15s; 
 }
 
-.grid-container button:hover{
+.grid-container span:hover{
   cursor: pointer;
   background-color:rgba(78, 105, 88, 0.779);
   transform: translateY(4px); 

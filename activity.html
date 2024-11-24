@@ -13,29 +13,32 @@
     <header>
         <h1>Activity Page</h1>
         <nav>
-            <a href="index.html">MatMod</a></li>
-            <a class="active" href="#home">Activity</a></li>
-            <a href="github.html">GitHub</a></li>
-            <a href="accessibility-page.html">Acessibility</a></li>
+            <ul>
+                <li><a href="index.html">MatMod</a></li>
+                <li><a class="active" href="#home">Activity</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="accessibility-page.html">Acessibility</a></li>
+            </ul>
         </nav>
     </header>
 
     <main class="activity-main">
-    <section class="img-container"> <!-- text in front of img learnt from W3 schools-->
+    <section class="img-container"> 
         <img src="media/oksatjønn.jpg" alt="Oksatjønn"> <!--img source: Flickr.com, photographer: Lars Helge Ingerlid-->
         <h2>OKSATJØNN</h2>
         <h3> Turløype i Rauland</h3>
+        <div class="credits">Photo: Lars Helge Ingerlid</div>
     </section>
 
     <section class="img-gallery">
         <div> <!--box for image-->
-            <img src="media/vierli.avif" alt="Vierli kafeteria, hvor turen starter"> <!--img source: visitnorway.no-->
+            <img src="media/natur-vierli.jpg" alt="Vierli kafeteria, hvor turen starter"> <!--img source: flickr.com, photographer: Pedro Varela-->
         </div>
         <div>
-            <img src="media/vidsyn.avif" alt="Statuen vidsyn som man kan se på turen"> <!--img source: utemagasinet.no, Guro Lien-->
+            <img src="media/foss-vierli.jpg" alt="Statuen vidsyn som man kan se på turen"> <!--img source: flickr.com, photographer: Pedro Varela-->
         </div>
         <div>
-            <img src="media/oksatjønn-sommer.avif" alt="Oksakjønn på sommeren"> <!--img source: vieveier.no, Per-->
+            <img src="media/natur.jpg" alt="Oksakjønn på sommeren"> <!--img source: flickr.com, photographer: Pål-Krisitan Hansen-->
         </div>
     </section> 
 
@@ -45,8 +48,8 @@
         <table class="infobox">
             <tr>
                 <td>Sted: </td>
-                <td> <a class= "linkstyle" href="https://ut.no/omrade/1235/hardangervidda/kart#7.77/60.2/7.693">Hardangervidda</a>,
-                    <a class="linkstyle" href="https://ut.no/omrade/1270/telemark/kart#7.3/59.329/8.759">Telemark</a></td>
+                <td> <a href="https://ut.no/omrade/1235/hardangervidda/kart#7.77/60.2/7.693">Hardangervidda</a>,
+                    <a href="https://ut.no/omrade/1270/telemark/kart#7.3/59.329/8.759">Telemark</a></td>
             </tr>
             <tr>
                 <td>Lengde: </td>
@@ -73,10 +76,10 @@
                 Skiltet og merket med stolper. Rundløype i Silkedalen går i
                 landskapsvernområde, ta hensyn til det rike plante- og dyrelivet.
             </p>
-            <p> Turen startar ved <a class="linkstyle" href="https://visitrauland.com/rauland-skisenter/mat-og-drikke/"> Vierli Kaféteria </a> 
+            <p> Turen startar ved <a href="https://visitrauland.com/rauland-skisenter/mat-og-drikke/"> Vierli Kaféteria </a> 
                 ved undergangen under fylkesvegen. 
                 Følg merka tursti til toppen av Vierlinuten (1100 m.o.h.). 
-                Her finn du skulpturen <a class="linkstyle" href="https://visitrauland.com/sommer/vidsyn/">Vidsyn</a>. Følg stien vidare over åskammen mot Oksatjønn. 
+                Her finn du skulpturen <a href="https://visitrauland.com/sommer/vidsyn/">Vidsyn</a>. Følg stien vidare over åskammen mot Oksatjønn. 
                 Løypa er delvis opparbeida med grus og går over i tørr sti. 
                 Det er nokre myrområder undervegs med klopper. 
             </p>
@@ -89,26 +92,22 @@
         <section> 
             <h5> Veibeskrivelse</h5>
             <p> Finn veibeskrivelse med Google Maps. Vær oppmerksom på at det ofte ikke er vei helt frem og at Google Maps kan vise vei til et annet sted enn anbefalt.</p>
-            <img src="media/map.jpeg" alt="Kart Oksatjønn"> <!--img source: ut.no-->
-            <button>  
-                <a href="https://ut.no/tur/1114717/oksatjnn/kart#13.44/59.73658/8.16829">
-                    Se Kart 
-                </a> 
-            </button> 
+            <img src="media/map.jpeg" alt="Kart Oksatjønn"> <!--img source: ut.no--> 
+            <a href="https://ut.no/tur/1114717/oksatjnn/kart#13.44/59.73658/8.16829">
+                    <span>Se Veibeskrivelse</span>
+            </a> 
         </section>
         <section>
             <h6>Værmelding</h6>
             <p>Finn væremelding og varseler på yr.no for turområdet. Vær oppmerksom på at været ofte kan endre seg, og ikke alltid stemmer med værmeldingen. </p>
             <img src="media/yr.jpg" alt="Yr Værmelding"> <!--img source: yr.no-->
-            <button> 
-                <a href="https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-54562/Norge/Telemark/Vinje/Oksatj%C3%B8nn">
-                    Se Værmelding
-                </a>
-            </button>
+            <a href="https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-54562/Norge/Telemark/Vinje/Oksatj%C3%B8nn">
+                <span>Se Værmeldingen</span> 
+            </a>
         </section>
     </article>
 
-    <hr>
+        <hr>
 
     <article>       
         <p class="h7">Populære turløyper i området</p>
@@ -116,7 +115,7 @@
             <div class="responsive">
                 <div class="gallery">
                 <a target="_blank" href="https://ut.no/sted/143501/gaustatoppen">
-                <img src="media/gaustatoppen.avif" alt="Cinque Terre">
+                <img src="media/gaustatoppen.jpg" alt="Gaustatoppen"> <!--img source: flickr.com, photographer: Vlash-->
                 </a>
                 <div class="desc">Gaustatoppen</div>
                 </div>
@@ -125,7 +124,7 @@
             <div class="responsive">
                 <div class="gallery">
                 <a target="_blank" href="https://ut.no/utforsker/stedsnavn/731825/totak/turforslag">
-                <img src="media/totak.avif" alt="Totak turløype">
+                <img src="media/totak.jpg" alt="Totak vannet"> <!--img source: flickr.com, photographer: Michael Spiller-->
                 </a>
                 <div class="desc">Totak</div>
                 </div>
@@ -134,7 +133,7 @@
             <div class="responsive">
                 <div class="gallery">
                 <a target="_blank" href="https://ut.no/utforsker/stedsnavn/913236/uvatn/turforslag">
-                <img src="media/uvatn.avif" alt="Uvatn turløype">
+                <img src="media/uvatn.jpg" alt="Uvatn"> <!--img source: flickr.com photographer: Stef James-->
                 </a>
                 <div class="desc">Uvatn</div>
                 </div>
@@ -142,10 +141,10 @@
 
             <div class="responsive">
                 <div class="gallery">
-                <a target="_blank" href="https://ut.no/utforsker/stedsnavn/913236/uvatn/turforslag">
-                <img src="media/vierli.avif" alt="Vierli kafe og turløype">
+                <a target="_blank" href=https://www.visitrjukan.com/se-og-gjore/norsk-industriarbeidermuseum-vemork-med-verdensarvsenter-p508833>
+                <img src="media/museum.jpg" alt="Tungtvannsmuseet i Rjukan"> <!--img source: flickr.com, photographer: Nigel Swales-->
                 </a>
-                <div class="desc">Vierli Kaféteria</div>
+                <div class="desc">Tungtvannsmuseet</div>
                 </div>
             </div>
       
@@ -155,7 +154,7 @@
     </main>
 
     <footer class="activity-footer">
-        <p>2024 ActivityPage Collaboration Exam</p>
+        <p>2024 Exam - Activity Page Collaboration</p>
     </footer>
 
 </body>

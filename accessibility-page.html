@@ -11,26 +11,25 @@
 <body>
     <header>
         <h1>Accessibility Page</h1>
-        <nav aria-label="Site Navigation">
-            <ul class="nav">
-                <li><a href="#accessibility-info">Ensuring Accessibility</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+
+        <nav class="nav" aria-label="Main Navigation">
+            <ul class="main-nav">
+                <li><a href="index.html">MatMod</a></li>
+                <li><a class="active" href="#home">Activity</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="accessibility-page.html">Acessibility</a></li>
             </ul>
-        </nav>
-        <nav aria-label="Main Navigation">
-            <ul class="nav">
-                <li class="dropdown"><i class="fas fa-bars"></i>
-                    <div class="dropdown-content">
-                        <a href="activity.html">Activity</a>
-                        <a href="github.html">GitHub</a>
-                        <a href="index.html">MatMod</a>
-                    </div>
-                </li>
-                 <button class="btn-dark" onclick="darkMode()">Darkmode</button>
-                 <button class="btn-light" onclick="lightMode()">LightMode</button>
+            <ul class="mode-switch">
+                <button class="btn-dark" onclick="darkMode()">Darkmode</button>
+                <button class="btn-light" onclick="lightMode()">LightMode</button>
             </ul>
-        </nav>
+        </nav>   
     </header>
+
+    <ul  class= "breadcrumb" aria-label="Site Navigation">
+        <li><a href="#accessibility-info">Ensuring Accessibility</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
 
    <main id="main-content">
         <section id="accessibility-info" tabindex="0">
