@@ -1,6 +1,6 @@
 /* Index css code */
 
-/*MÅ FJERNES*/
+/*Styling image*/
 .oslometIMG {
     /*position: fixed;*/
     bottom: 47vw; /* 10px from the bottom of the viewport */
@@ -11,8 +11,8 @@
     margin: 0;
     padding: 0;
     height: auto;
-}
 
+}
 /*Basic body styling*/
 .indexbody {
     margin: 0;
@@ -38,7 +38,6 @@
  .indexh1 {
     margin: 0;
     font-size: 1rem;
-    text-align: center;
 }
 
 .indexheader nav ul {
@@ -314,6 +313,7 @@ border-bottom: black;
     height: 30px;
 }
 
+/*styles the heading "Studiested"*/
 .study-place {
     display: block;
     font-weight: bold;
@@ -321,6 +321,7 @@ border-bottom: black;
     margin-bottom: 10px;
 }
 
+/* styling an underline with matching color to the website to make it more visible for a user to see it is a link*/
 .underline-text-place {
     text-decoration: underline;
     text-decoration-color:#129c9c;
@@ -328,6 +329,7 @@ border-bottom: black;
     margin-bottom: 20px;
 }
 
+/*styles the heading "Spørsmål om utdanningen?"*/
 .education-questions {
     display:block;
     font-weight: bold;
@@ -335,6 +337,7 @@ border-bottom: black;
     margin-bottom: 10px;
 }
 
+/* styling an underline with matching color to the website to make it more visible for a user to see it is a link*/
 .underline-text-q {
     text-decoration: underline;
     text-decoration-color: #129c9c;
@@ -342,7 +345,7 @@ border-bottom: black;
     margin-bottom: 20px;
 }
 
-
+/*styling the heading "Faglig leder"*/
 .manager-title {
     display: block;
     font-weight: bold;
@@ -350,6 +353,7 @@ border-bottom: black;
     margin-bottom: 10px;
 }
 
+/*styles the heading "Du er kanskje også interessert i disse?"*/
 .further-interests-title {
     font-weight: bold;
     font-size: 24px;
@@ -357,6 +361,7 @@ border-bottom: black;
     margin-bottom: 20px;
 }
 
+/* general styling for the manager section, desiding things as size, border, flex etc.*/
 .manager-profile {
     border: 1px solid #ddd;
     border-radius: 25px;
@@ -371,10 +376,12 @@ border-bottom: black;
     margin:0 auto;
 }
 
+/* makes the hover effect slightly change color*/
 .manager-profile:hover {
     background-color: #f0f0f0;
 }
 
+/*styles the manager image*/
 .manager-image img {
     width: 121px;
     height: 162px;
@@ -382,6 +389,7 @@ border-bottom: black;
     margin-right: 20px;
 }
 
+/*styling the manager info text*/
 .manager-info {
     font-size: 14px;
     flex-grow: 1;
@@ -389,18 +397,21 @@ border-bottom: black;
    
 }
 
+/* styles the information about the manager*/
 .manager-info strong {
     font-size: 18px;
     display: block;
     margin-bottom: 5px;
 }
+
+/*styles the arrow used in manager section*/
  .arrow {
     font-size: 24px;
     margin-left: 20px;
  }
 
 
-
+/*general settings for the cards*/
 .card-container {
     display: flex;
     flex-direction: column;
@@ -409,7 +420,8 @@ border-bottom: black;
     gap: 15px;
 }
 
-.card { 
+/*general styling for the education program cards, deciding for example backgroud color, size, flex, and shape. */
+.program-info { 
     display: flex;
     width: 100%;
     border-radius: 20px;
@@ -424,24 +436,32 @@ border-bottom: black;
     background-color: #129c9c;
 }
 
-
-.card:hover {
+/* hover effect for the education link cards*/
+.program-info:hover { 
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+/* hover effect for links inside the cards*/
+a:hover {
+    text-decoration: underline;
 
-.card-content {
+}
+
+/* styling for content inside cards*/
+.program-info {
     padding: 16px;
 
 }
 
-.card-content h3 {
+/*styling for card headers*/
+.program-info h3 {
     font-size: 18px;
     margin: 0 0 8px;
     color: #000000;
 }
 
-.card-content p {
+/* Styling for paragraphs inside cards*/
+.program-info p {
     font-size: 14px;
     color: #333;
 }
@@ -459,40 +479,9 @@ border-bottom: black;
     padding: 2rem;
 }
 
-
-.github header {
-    background-color: #004d4d;
-    color: white;
-    padding: 1rem 2rem;
-    border-bottom: 4px solid #006666;
-}
-
 .github header h1 {
     margin: 0;
     font-size: 1.8rem;
-}
-
-/*navbar styling */
-.github nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.github nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.github nav ul li a { 
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0;
-}
-
-.github nav ul li a:hover {
-    text-decoration: underline;
 }
 
 .github h2 {
