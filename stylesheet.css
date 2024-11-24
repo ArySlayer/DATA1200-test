@@ -1,7 +1,9 @@
 
-
-/* Start of shared basic css for the websites*/
-
+/* Start of shared basic css for the website, except the activity page.
+   All tags have classes with the same name to avoid interference with activity page design*/
+* {
+    box-sizing: border-box;
+  }
 /* line-height, font-size, color-contrast in body, and padding around main content following WCAG-recommentations for better visibility and therefore also accessibility*/
 .body {
     font-family: 'Arial', sans-serif;
@@ -609,20 +611,16 @@ a:focus, input:focus, .WCAG-link:hover {
     outline: rgb(255, 102, 1) 3px solid; 
 }
 
-/*CSS for activity, sorted by sections. */
-
-* {
-    box-sizing: border-box;
-  }
+/*Start of CSS for activity, sorted by sections. */
   
-  /*Body-tag for activity page*/
+  /*Styling for activity body*/
   .activity {
       margin:0;
       background-color:#dadada;
       font-family: helvetica;
   }
   
-  /*main-tag in activity page*/
+  /*Styling for activity main-tag*/
   .activity-main{
     margin: 7vw;
     margin-top: 0;
@@ -645,12 +643,14 @@ a:focus, input:focus, .WCAG-link:hover {
     color: rgb(38, 47, 39);
     margin: 0px 0px 0px 5px;
    }
-  
+
+  /*Styling the menu, making a flexbox for the links*/
    .activity nav ul{
     display: flex;
     list-style-type: none;
    }
-  
+
+/*Adding style to menu links*/
   .activity nav a {
     flex:1;
     display: inline-block;
@@ -662,6 +662,7 @@ a:focus, input:focus, .WCAG-link:hover {
     border-radius: 5px;
   }
   
+  /*Header display for narrow screens*/
   @media screen and (max-width:500px) {
     .activity header {
       display: flex;
@@ -689,7 +690,7 @@ a:focus, input:focus, .WCAG-link:hover {
     background-color: rgba(99, 134, 108, 0.659);
     color: white;
   }
-  
+  /*Adding h2 in front of main image */
   .activity h2 {
     position: absolute;
     top: 40%;
@@ -700,7 +701,8 @@ a:focus, input:focus, .WCAG-link:hover {
     font-size: 8vw;
     font-weight: 200;  
   }
-  
+
+  /*Adding h3 in front of main image*/
   .activity h3 {
     position: absolute;
     top: 60%;
@@ -710,7 +712,8 @@ a:focus, input:focus, .WCAG-link:hover {
     font-size: 3vw;
     font-weight: 100;
   }
-  
+
+  /*Styling the rest of activity page headers*/
   .activity h4, h5 , h6, .h7 {
     font-weight: 100;
     text-align: center;
@@ -731,14 +734,16 @@ a:focus, input:focus, .WCAG-link:hover {
   .img-container img {
     border-radius: 5px;
   }
-  
+
+  /*Adding visible credits to main image*/
   .img-credits {
     position: absolute;
     bottom: 8px;
     right: 16px;
     font-size: 7px;
   }
-  
+
+  /*Styling of image gallery*/
   .img-gallery {
     display: flex;
     flex-direction: row;
@@ -756,29 +761,30 @@ a:focus, input:focus, .WCAG-link:hover {
     max-width: 100%;
   }
   
-  /*size for the rest of the pictures*/
+  /*size for the rest of the pictures for activity page*/
   .img-gallery img, .gallery img, .grid-container img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
   }
   
-  /*First article*/
-  .about-activity{
+  /*Creating flexbox for first article*/
+  .flexbox{
     display:flex;
     flex-direction: row;
     align-items: top;
   }
   
+  /*Giving a different display for smaller sizes*/
   @media screen and (max-width: 800px) {
-    .about-activity{
+    .flexbox{
       display:grid;
       align-items: center;
     }
   }
   
-  /*Information table*/
-  .about-activity .infobox {
+  /*Styling of information table*/
+  .flexbox .infobox {
     flex:1;
     padding: 3vw; 
     border-spacing: 10px;
@@ -788,8 +794,8 @@ a:focus, input:focus, .WCAG-link:hover {
     box-shadow: 2px 2px 7px rgb(107, 103, 103);
     color: rgb(247, 242, 242);
   }
-  
-  .activity-text {
+  /*Putting paragraphs in a box */
+  .paragraph-box {
     flex: 2;
     width: 90%;
     text-align: justify;
@@ -797,18 +803,18 @@ a:focus, input:focus, .WCAG-link:hover {
     border-radius: 15px;
   }
   
-  .about-activity a {
+  .flexbox a {
     color: #285b88;
     text-decoration: none;
     transition: color 0.15s;
   }
   
-  .about-activity a:hover {
+  .flexbox a:hover {
     color: #01447e;
     text-decoration: underline;
   }
   
-  /*For article two*/
+  /*Creating grid container for second article*/
   .grid-container {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -818,6 +824,7 @@ a:focus, input:focus, .WCAG-link:hover {
    padding-top: 0;
   }
   
+  /*Giving a different display for smaller sizes*/
   @media screen and (max-width: 500px) {
   
     .grid-container {
@@ -825,6 +832,7 @@ a:focus, input:focus, .WCAG-link:hover {
     }
   }
   
+  /*Styling the grid elements*/
     .grid-container section {
     display:flex;
     flex-direction: column;
@@ -833,13 +841,16 @@ a:focus, input:focus, .WCAG-link:hover {
     justify-content: center;
   }
   
+  /*Styling grid links*/
    .grid-container a {
     text-decoration: none;
     color: rgba(247, 242, 242, 0.782);
     margin-top: 20px;
     padding: 10px; 
   }
-  
+
+  /*Styling buttons for second article. 
+    Using span to create bigger clickable area for accessibility.*/
    .grid-container span {
     padding: 10px; 
     margin-top: 20px;
@@ -861,7 +872,9 @@ a:focus, input:focus, .WCAG-link:hover {
     transform: translateY(4px); 
   }
   
-   /*taken from w3schools*/
+   /*Creating photo gallery, with links and description. Taken from w3schools*/
+
+   /*Creating the image box*/
    .gallery {
     border: 1px solid #ccc;
     box-shadow: rgb(107, 103, 103) 2px 2px 7px;
@@ -877,7 +890,7 @@ a:focus, input:focus, .WCAG-link:hover {
     padding: 15px;
     text-align: center;
   }
-  
+  /*Wrapped around image box*/
   .responsive {
     padding: 0 6px;
     margin-top: 20px;
@@ -897,14 +910,17 @@ a:focus, input:focus, .WCAG-link:hover {
       width: 100%;
     }
   }
-  
+  /*To keep imgages from overflowing the container*/
   .clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
   
+  /*Activity footer*/
   .activity-footer {
     text-align: center;
     background-color: #dadada;
   }  
+
+  /*End of Activity Page CSS*/

@@ -44,7 +44,7 @@
 
    <!--Tatt innhold fra Ut.no, inkludert linker-->
     <h4> Om Turen </h4>
-    <article class="about-activity">
+    <article class="flexbox">
         <table class="infobox">
             <tr>
                 <td>Sted: </td>
@@ -68,7 +68,7 @@
                 <td>Middels krevende</td>
             </tr>
         </table>
-        <section class="activity-text"> 
+        <section class="paragraph-box"> 
             <p> Rundløype på 3,8 km med muligheter til en lengre tur innover 
                 i Silkedalen på 2,5 km. Hovedsaklig på sti men også noe på grusvei. 
                 Fint høyfjellsterreng med flott utsikt i flere retninger.
@@ -94,7 +94,7 @@
             <p> Finn veibeskrivelse med Google Maps. Vær oppmerksom på at det ofte ikke er vei helt frem og at Google Maps kan vise vei til et annet sted enn anbefalt.</p>
             <img src="media/map.jpeg" alt="Kart Oksatjønn"> <!--img source: ut.no--> 
             <a href="https://ut.no/tur/1114717/oksatjnn/kart#13.44/59.73658/8.16829">
-                    <span>Se Veibeskrivelse</span>
+                    <span aria-label="button">Se Veibeskrivelse</span>
             </a> 
         </section>
         <section>
@@ -102,7 +102,7 @@
             <p>Finn væremelding og varseler på yr.no for turområdet. Vær oppmerksom på at været ofte kan endre seg, og ikke alltid stemmer med værmeldingen. </p>
             <img src="media/yr.jpg" alt="Yr Værmelding"> <!--img source: yr.no-->
             <a href="https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-54562/Norge/Telemark/Vinje/Oksatj%C3%B8nn">
-                <span>Se Værmeldingen</span> 
+                <span aria-label="button">Se Værmeldingen</span> <!--Included aria-label to make span read as button-->
             </a>
         </section>
     </article>
