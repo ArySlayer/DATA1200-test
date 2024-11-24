@@ -657,8 +657,10 @@ a:focus, input:focus, .WCAG-link:hover {
   
   /*Styling for activity main-tag*/
   .activity-main{
-    margin: 7vw;
-    margin-top: 0;
+      margin: 0 auto;
+      margin-top: 0;
+      max-width: 1800px; /* Adjust based on the design's max width */
+      padding: 0 1rem; /* Optional for padding */
   }
   
   /*Flexbox for activity page header*/
