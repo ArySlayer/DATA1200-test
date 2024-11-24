@@ -7,9 +7,8 @@
     <script src="https://kit.fontawesome.com/836cdb6e60.js" crossorigin="anonymous"></script> <!-- Source for icons-->
     <title>Exam - Accessability Page</title>
     
-</head>
-<body class="body">
-    <header class="header">
+</head> 
+   <header class="header">
         <h1>Accessibility Page</h1>
 
         <nav class="nav" aria-label="Main Navigation">
@@ -17,7 +16,7 @@
                 <li><a href="index.html">MatMod</a></li>
                 <li><a href="activity.html">Activity</a></li>
                 <li><a href="github.html">GitHub</a></li>
-                <li><a class="active" href="accessibility-page.html">Acessibility</a></li>
+                <li><a class="active" href="accessibility-page.html">Accessibility</a></li>
             </ul>
             <ul class="mode-switch">
                 <button class="btn-dark" onclick="darkMode()">Darkmode</button>
@@ -25,6 +24,8 @@
             </ul>
         </nav>   
     </header>
+<body class="body">
+
 
     <ul  class= "breadcrumb" aria-label="Site Navigation">
         <li><a href="#accessibility-info">Ensuring Accessibility</a></li>
@@ -40,11 +41,11 @@
             <h3>How we ensure accessibility </h3>
             <p>To ensure that the webpage cater to all users effectively, we have implemented a few different measures that we will elaborate on. The first key measure is our use of semantic HTML element, such as "header", "main", "footer" and "btn" among more others, to highlight the elemtents' role and help the website navigation for assistive technologies, like screen readers. HTML plays a foundational role in achieving the goal of creating accessible environments in the context of developing a web site. While automated tests identify many issues regarding accessibility, they often miss more nuanced aspects of universal design. Thoughtful coding choices requires that the developers consider real-world user needs and therefore extends beyond automated testing. For example, tests might confirm that code tags are present, but thoughtful coding ensures that they are used appropriately. Below, you can see a screenshot of our code showing some examples of use the of semantic HTML and thoughtful coding.</p>
 
-            <img  src="media/screenshot-code.png" alt="screenshot-of-code">
+            <img  src="media/screenshot-code.png" alt="screenshot-of-code" style="max-width: 800px;">
 
             <p>Another way to ensure accessibility is by using simple, readable and clear language with structured content for readability. Also, by enabling the choice of dark- or light mode and the use of high color contrast colors in our styling in the CSS-file, and also by providing alternativ text for images in the HTML, we provide accessibility to users with low vision. We have mostly used button-attributes instead of the div-attributes for clickable elements to enable the use of external tools, such as screenreaders, without any problems. Additionaly, we have made the interactive elements in this website easy to identify. Below, you will see a screenshot-image of results from Lighthouse' accessibility testing of this website.</p>
 
-            <img  src="media/accessibilitytest-LH.png" alt="accessibility-test-results">
+            <img  src="media/accessibilitytest-LH.png" alt="accessibility-test-results" style="max-width: 800px;"">
 
              <p>Examples of other mesures are that we have included ARIA (Accessible Rich Internet Applications), attributes such as <em>aria-lable</em> for accessibility if the required fields aren't visually obvious and for allowing error message updates in real-time. In addition, by incorporating ARIA attributes, our website allows keyboard operability, by making the interactive elements operable using the keybord. We have created clear visible indicators, such as a blue focus outline, helping the users focus on the current selected elements. By following the <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" class="WCAG-link" aria-label="WCAG 2.1 Guidelines">WCAG 2.1 Guidelines</a>, we ensure that our content's accessibility to users with various diabilities, for example auditory and visual impairments.</p>
         </section>
@@ -77,8 +78,9 @@
     </script>  
       <!-- https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/ -->
 
-    <footer class="footer">
+   
+</body>
+ <footer class="footer">
         <p>2024 Exam - Accessability Page</p>
     </footer>
-</body>
 </html>

@@ -12,6 +12,9 @@
     color: #000000;
     background-color: #ffffff;
     line-height: 1.6;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Adds some padding for smaller screens */
 }
 
 .header {
@@ -22,6 +25,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    width: 100%;
 }
 .header .h1 {
     padding: 1rem 2rem;
@@ -464,7 +468,7 @@ border-bottom: black;
     font-size: 14px;
     color: #333;
 }
-/* End of spexial Index css code */
+/* End of special Index css code */
 
 /* Start of GitHub css code */
 .github { /* Changes font styling & sets margin to scale webpage */
@@ -692,14 +696,7 @@ a:focus, input:focus, .WCAG-link:hover {
     border-radius: 5px;
   }
   
-  /*Header display for narrow screens*/
-  @media screen and (max-width:500px) {
-    .activity header {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-  
+
     .activity h1 {
       padding:5px;
     }
