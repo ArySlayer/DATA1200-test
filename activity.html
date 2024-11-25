@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/836cdb6e60.js" crossorigin="anonymous"></script>
     <title>ActivityPage</title>
 </head>
+
 <header>
         <h1>Activity Page</h1>
         <nav aria-label="Main Navigation">
@@ -19,20 +20,20 @@
                 <li><a href="accessibility-page.html">Acessibility</a></li>
             </ul>
         </nav>
-    </header>
+</header>
 <body class="activity">
     
 
     <main class="activity-main">
-    <section class="img-container"> 
+    <article class="img-container"> 
         <img src="media/oksatjønn.jpg" alt="Oksatjønn"> <!--img source: Flickr.com, photographer: Lars Helge Ingerlid-->
         <h2>OKSATJØNN</h2>
         <h3> Turløype i Rauland</h3>
         <div class="img-credits">Photo: Lars Helge Ingerlid</div>
-    </section>
+    </article>
 
-    <section class="img-gallery">
-        <div> <!--box for image-->
+    <article class="img-gallery">
+        <div>
             <img src="media/natur-vierli.jpg" alt="Utsikt over oksatjønn"> <!--img source: flickr.com, photographer: Pedro Varela-->
         </div>
         <div>
@@ -41,12 +42,12 @@
         <div>
             <img src="media/natur.jpg" alt="Utsikt fra turen rund oksatjønn"> <!--img source: flickr.com, photographer: Pål-Krisitan Hansen-->
         </div>
-    </section> 
+    </article> 
 
    <!--Content taken from Ut.no. Links from ut.no, visitrauland.com, yr.no and visitrjukan.no.-->
     <h4> Om Turen </h4>
-    <article class="flexbox">
-        <table class="infobox">
+    <section class="flexbox">
+        <table class="infobox"> <!--Table as flexbox element-->
             <tr>
                 <td>Sted: </td>
                 <td> <a href="https://ut.no/omrade/1235/hardangervidda/kart#7.77/60.2/7.693">Hardangervidda</a>,
@@ -69,7 +70,7 @@
                 <td>Middels krevende</td>
             </tr>
         </table>
-        <section class="paragraph-box"> 
+        <article class="paragraph-box"> <!--Box for paragraphs creating second flex element in flexbox--> 
             <p> Rundløype på 3,8 km med muligheter til en lengre tur innover 
                 i Silkedalen på 2,5 km. Hovedsaklig på sti men også noe på grusvei. 
                 Fint høyfjellsterreng med flott utsikt i flere retninger.
@@ -84,35 +85,35 @@
                 Løypa er delvis opparbeida med grus og går over i tørr sti. 
                 Det er nokre myrområder undervegs med klopper. 
             </p>
-        </section> 
-    </article>
+        </article> 
+    </section>
 
         <hr>
 
-    <article class="grid-container">
-        <section> 
+    <section class="grid-container"> <!--Articles in this section will be flexboxes for their child elements-->
+        <article>
             <h5> Veibeskrivelse</h5>
             <p> Finn veibeskrivelse med Google Maps. Vær oppmerksom på at det ofte ikke er vei helt frem og at Google Maps kan vise vei til et annet sted enn anbefalt.</p>
-            <img src="media/map.jpeg" alt="Kart Oksatjønn"> <!--img source: ut.no--> 
+            <img src="media/map.jpeg" alt="Kart Oksatjønn"> <!--img source: screenshot of from https://ut.no/turforslag/1114717/oksatjnn--> 
             <a href="https://ut.no/tur/1114717/oksatjnn/kart#13.44/59.73658/8.16829">
                     <span aria-label="button">Se Veibeskrivelse</span>
             </a> 
-        </section>
-        <section>
+        </article>
+        <article>
             <h6>Værmelding</h6>
             <p>Finn væremelding og varseler på yr.no for turområdet. Vær oppmerksom på at været ofte kan endre seg, og ikke alltid stemmer med værmeldingen. </p>
             <img src="media/yr.jpg" alt="Yr Værmelding"> <!--img source: screenshit of yr.no-->
             <a href="https://www.yr.no/nb/v%C3%A6rvarsel/daglig-tabell/1-54562/Norge/Telemark/Vinje/Oksatj%C3%B8nn">
                 <span aria-label="button">Se Værmeldingen</span> <!--Included aria-label to make span read as button-->
             </a>
-        </section>
-    </article>
+        </article>
+    </section>
 
         <hr>
 
-    <article>       
+    <section> 
         <p class="h7">Populære turløyper i området</p>
-        <section>
+        <article> <!--This section taken from w3schools: https://www.w3schools.com/css/css_image_gallery.asp-->      
             <div class="responsive">
                 <div class="gallery">
                 <a target="_blank" href="https://ut.no/sted/143501/gaustatoppen">
@@ -134,7 +135,7 @@
             <div class="responsive">
                 <div class="gallery">
                 <a target="_blank" href="https://ut.no/utforsker/stedsnavn/913236/uvatn/turforslag">
-                <img src="media/uvatn.jpg" alt="Uvatn"> <!--img source: flickr.com photographer: Stef James-->
+                <img src="media/uvatn.jpg" alt="Uvatn, Rauland"> <!--img source: flickr.com photographer: Stef James-->
                 </a>
                 <div class="desc">Uvatn</div>
                 </div>
@@ -149,10 +150,11 @@
                 </div>
             </div>
       
-            <div class="clearfix"></div> <!--Taken from w3schools-->
-        </section>
-    </article>
+            <div class="clearfix"></div> <!--Taken from w3schools: https://www.w3schools.com/css/css_float_clear.asp-->
+        </article>
+    </section>
     </main>
+
     <footer class="activity-footer">
         <p>2024 Exam - Activity Page Collaboration</p>
     </footer>

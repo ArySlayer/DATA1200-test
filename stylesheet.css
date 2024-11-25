@@ -727,7 +727,8 @@ a:focus, input:focus, .WCAG-link:hover {
     background-color: rgba(99, 134, 108, 0.659);
     color: white;
   }
-  /*Adding h2 in front of main image */
+  /*Adding h2 in front of main image
+   Based on example from w3schools: https://www.w3schools.com/howto/howto_css_image_text.asp */
   .activity h2 {
     position: absolute;
     top: 40%;
@@ -759,7 +760,7 @@ a:focus, input:focus, .WCAG-link:hover {
     margin-bottom:0;
   }
   
-  /*Container for main image, based on example from w3schools */
+  /*Container for main image*/
   .img-container {
     position: relative;
     text-align: center;
@@ -805,7 +806,7 @@ a:focus, input:focus, .WCAG-link:hover {
     border-radius: 5px;
   }
   
-  /*Creating flexbox for first article*/
+  /*Creating flexbox for first section*/
   .flexbox{
     display:flex;
     flex-direction: row;
@@ -851,7 +852,7 @@ a:focus, input:focus, .WCAG-link:hover {
     text-decoration: underline;
   }
   
-  /*Creating grid container for second article*/
+  /*Creating grid container for articles in second section*/
   .grid-container {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -869,8 +870,8 @@ a:focus, input:focus, .WCAG-link:hover {
     }
   }
   
-  /*Styling the grid elements*/
-    .grid-container section {
+  /*Making sections inside the grid-container flexboxes*/
+    .grid-container article {
     display:flex;
     flex-direction: column;
     text-align: justify;
@@ -886,7 +887,7 @@ a:focus, input:focus, .WCAG-link:hover {
     padding: 10px; 
   }
 
-  /*Styling buttons for second article. 
+  /*Styling buttons for second section. 
     Using span to create bigger clickable area for accessibility.*/
    .grid-container span {
     padding: 10px; 
@@ -897,7 +898,7 @@ a:focus, input:focus, .WCAG-link:hover {
     font-size: 16px;
     border-radius: 15px;
     background-color: rgb(97, 129, 109);
-    color: rgba(247, 242, 242, 0.782);
+    color: rgb(247, 242, 242);
     border: none;
     box-shadow: 2px 2px 7px rgb(107, 103, 103);
     transition: background-color 0.15s; 
@@ -909,7 +910,8 @@ a:focus, input:focus, .WCAG-link:hover {
     transform: translateY(4px); 
   }
   
-   /*Creating photo gallery, with links and description. Taken from w3schools*/
+   /*Creating photo gallery, with links and description. 
+     Taken from w3schools: https://www.w3schools.com/css/css_image_gallery.asp*/
 
    /*Creating the image box*/
    .gallery {
@@ -923,6 +925,7 @@ a:focus, input:focus, .WCAG-link:hover {
     border: 1px solid #777;
   }
   
+  /*Description for gallery images*/
   .responsive .desc {
     padding: 15px;
     text-align: center;
@@ -958,6 +961,6 @@ a:focus, input:focus, .WCAG-link:hover {
   .activity-footer {
     text-align: center;
     background-color: #dadada;
+    padding: 20px;
   }  
-
   /*End of Activity Page CSS*/
