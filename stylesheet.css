@@ -292,7 +292,7 @@ border-bottom: black;
 .contact-info p {
     margin: 4px 0px;
 }
-
+/*Styling for footer elements in index*/
 .footer-links {
     gap: 10px; 
     line-break: strict; 
