@@ -45,6 +45,8 @@ main { /*adds max width to all elements */
     padding: 1vw;
     text-decoration: none;
     font-size: 1vw;
+    color: #ffffff;
+    text-decoration: none;
   }
   
   @media screen and (max-width:500px) {
@@ -59,10 +61,6 @@ main { /*adds max width to all elements */
     }
   }
 
-.header .nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
 .header .nav a:hover {
     text-decoration: underline;
@@ -139,7 +137,7 @@ main { /*adds max width to all elements */
 }
 }
 
-/* Font settings and text decoration*/
+/* Font settings and padding*/
 h2 {
     font-size: 25px;
     padding: 10px;
@@ -195,9 +193,7 @@ summary {
     border-radius: 25px;
     box-shadow: 8px 8px 4px gray;
 }
-.nedtrekkArtikler {
-    border-radius: 25px;
-}
+
 /*Make "Studiets oppbygning" dropdowns different color*/
 .headerForDropDown {
     background-color: #26c387;
@@ -231,7 +227,8 @@ details[open] summary::before {
 }
 
 /*Make item to flex box, with direction as column*/
-.nedtrekkArtikler{
+.dropDownArticles{
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -412,12 +409,6 @@ border-bottom: black;
     display: block;
     margin-bottom: 5px;
 }
-
-/*styles the arrow used in manager section*/
- .arrow {
-    font-size: 24px;
-    margin-left: 20px;
- }
 
 /*general settings for the cards*/
 .card-container {
