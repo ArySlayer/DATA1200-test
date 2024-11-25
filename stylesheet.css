@@ -510,6 +510,14 @@ border-bottom: black;
   margin: 0 auto;
   padding: 0 1rem; /* Adds some padding for smaller screens */
 }
+
+.github .box { /* Adds box to surrounding pictures and text*/
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
 /* End of GitHub css code */
 
 
