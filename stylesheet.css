@@ -255,7 +255,6 @@ details[open] summary::before {
   max-height: 13%;
 }
 
-
 .newsletter-link:hover {
  background-color: #26c3874a;      
 }
@@ -263,60 +262,6 @@ details[open] summary::before {
 .body hr.solid {
 border-top: 1px solid black;
 border-bottom: black;
-}
-
-.schoolbanner, .contact-info, .footer-links, .footer-icons {
-    text-align: left;
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-}
-
-.schoolbanner {
-    font-size: 14px;
-}
-.bold-text {
-   font-weight: bold;
-   margin: 0;
-}
-.normal-text {
-   font-weight: normal;
-   margin: 0;
-}
-
-.footer-links {
-    gap: 10px; 
-    line-break: strict; 
-    padding: 10px; 
-}
-.footer-links a {
-    color: #fff;
-    font-weight: bold;
-}
-.footer-links a:hover {
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.footer-icons {
-    justify-content: center;
-    gap: 15px;
-    padding-top: 40px;
-}
-.footer-icons a {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.footer-icons a:hover {
-    text-decoration: underline;
-}
-.footer-icons img {
-    width: 30px;
-    height: 30px;
 }
 
 /*styles the heading "Studiested"*/
@@ -374,7 +319,7 @@ border-bottom: black;
     margin-right: 3vw;
   }
   /*Putting paragraphs in a box */
-  .contact-info {
+  .question-box {
     flex: 1;
     width: 90%;
     text-align: justify;
@@ -382,10 +327,6 @@ border-bottom: black;
     font-size: 16px; 
     padding: 10px;
   }
-  
-.contact-info p {
-    margin: 4px 0px;
-}
 
 /* makes the hover effect slightly change color*/
 .manager-profile:hover {
@@ -500,6 +441,78 @@ border-bottom: black;
     font-size: 14px;
     color: #333;
 }
+/*Flexbox for footer elements*/
+.schoolbanner, .contact-info, .footer-links, .footer-icons {
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    font-size: 16px; 
+    padding: 10px;
+}
+  
+.contact-info p {
+    margin: 4px 0px;
+}
+
+.schoolbanner {
+    font-size: 14px;
+}
+
+.bold-text {
+   font-weight: bold;
+   margin: 0;
+}
+
+.normal-text {
+   font-weight: normal;
+   margin: 0;
+}
+
+.footer-links {
+    gap: 10px; 
+    line-break: strict; 
+    padding: 10px; 
+}
+
+.footer-links a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*Styling footer icon boxes */
+.footer-icons {
+    justify-content: center;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.footer-icons a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-icons a:hover {
+    text-decoration: underline;
+}
+
+/*Sizing footer icon images */
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+}
+
 /* End of special Index css code */
 
 /* Start of GitHub css code */
