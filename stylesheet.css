@@ -596,9 +596,9 @@ border-bottom: black;
 }
 
 /* Styling the links in the text with a strong blue-color to enhance the link's visibility. Removing underline to integrate link into text*/
-.WCAG-link {
-    color:#2546f0;
-    text-decoration: none;
+body .WCAG-link {
+  color: #2546f0 !important; /* !important the rule to apply, to prevent this to be overridden by other link-css*/
+  text-decoration: none !important;
 }
 
 
