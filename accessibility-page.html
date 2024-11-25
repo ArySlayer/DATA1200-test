@@ -62,17 +62,18 @@
         </section>
     </main>
     <script>
-        function darkMode() {
-            let element = document.body;
+          function darkMode() {
+            let element = document.querySelector(".body"); // Select body with the class "body"
             let content = document.getElementById("DarkModetext");
-            element.className = "dark-mode";
-            content.innerText = "Dark Mode is ON";
+            element.classList.remove("light-mode");
+            element.classList.add("dark-mode");
         }
+        
         function lightMode() {
-            let element = document.body;
+            let element = document.querySelector(".body"); // Select body with the class "body"
             let content = document.getElementById("DarkModetext");
-            element.className = "light-mode";
-            content.innerText = "Dark Mode is OFF";
+            element.classList.remove("dark-mode");
+            element.classList.add("light-mode");
         }
     </script>  
       <!-- https://www.geeksforgeeks.org/how-to-make-dark-mode-for-websites-using-html-css-javascript/ -->
