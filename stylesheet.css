@@ -62,6 +62,7 @@ main { /*adds max width to all elements */
     padding: 1vw;
     text-decoration: none;
     color: #ffffff;
+    font-weight: bold;
   }
   
   @media screen and (max-width:500px) {
