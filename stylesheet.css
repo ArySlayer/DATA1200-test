@@ -285,14 +285,6 @@ border-bottom: black;
    margin: 0;
 }
 
-.contact-info {
-    font-size: 16px; 
-    padding: 10px; 
-}
-.contact-info p {
-    margin: 4px 0px;
-}
-/*Styling for footer elements in index*/
 .footer-links {
     gap: 10px; 
     line-break: strict; 
@@ -387,7 +379,13 @@ border-bottom: black;
     width: 90%;
     text-align: justify;
     margin-right: 3vw;
+    font-size: 16px; 
+    padding: 10px;
   }
+  
+.contact-info p {
+    margin: 4px 0px;
+}
 
 /* makes the hover effect slightly change color*/
 .manager-profile:hover {
@@ -641,7 +639,6 @@ body .WCAG-link {
   color: #2546f0 !important; /* !important the rule to apply, to prevent this to be overridden by other link-css*/
   text-decoration: none !important;
 }
-
 
 img {
     width: 100%;
