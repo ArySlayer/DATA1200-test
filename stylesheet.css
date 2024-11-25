@@ -238,17 +238,15 @@ details[open] summary::before {
 .newsletter-link {
   display: inline-block;
   background-color: #26c387;
-  padding: 20px 30px; /* Gir luft rundt teksten */
+  padding: 15px;
   padding-bottom: 65px;
   text-align: center;
   border-radius: 5px;
-  margin-bottom: 10px;
-  text-decoration: none;
   font-weight: bold;
-  font-size: 16px;  height: auto; 
+  font-size: 20px;
   line-height: 1.5;
   word-wrap: break-word;
-  height: 13%;
+  max-height: 13%;
 }
 
 
