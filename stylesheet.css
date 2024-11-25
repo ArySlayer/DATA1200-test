@@ -73,12 +73,13 @@ main { /*adds max width to all elements */
 }
 
 .footer {
-    background-color: #004d4d;
-    border-top: 4px solid #006666;
-    padding: 1rem;
-    text-align: center;
-    color: #ffffff;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: #004d4d;
+  color: #fff;
+  padding: 20px;
+} 
 /*End of shared basic css*/
 
 
@@ -234,19 +235,21 @@ details[open] summary::before {
     display: flex;
     flex-direction: column;
 }
-
 .newsletter-link {
-    display: inline-block;           
-    background-color: #26c387;                           
-    padding: 20px 30px;                                   
-    text-align: center;        
-    border-radius: 5px;              
-    margin-bottom: 10px;                                             
-    text-decoration: none;                         
-    text-align: center;     
-    font-weight: bold; 
-    font-size: 16px;                             
+  display: inline-block;
+  background-color: #26c387;
+  padding: 15px;
+  padding-bottom: 65px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  max-height: 13%;
 }
+
+
 .newsletter-link:hover {
  background-color: #26c3874a;      
 }
@@ -509,6 +512,14 @@ border-bottom: black;
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 1rem; /* Adds some padding for smaller screens */
+}
+
+.github .box { /* Adds box to surrounding pictures and text*/
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 /* End of GitHub css code */
 
