@@ -38,15 +38,16 @@ main { /*adds max width to all elements */
     display: flex;
     list-style-type: none;
     text-align: center;
+    list-style: none;
+    padding: 0;
+    
    }
   
  .header .nav a {
     flex:1;
     padding: 1vw;
     text-decoration: none;
-    font-size: 1vw;
     color: #ffffff;
-    text-decoration: none;
   }
   
   @media screen and (max-width:500px) {
@@ -84,10 +85,6 @@ main { /*adds max width to all elements */
 /* Start of special Index-related css code */
 
 /*Navigation menu*/
-.header .nav ul {
-    list-style: none;
-    padding: 0;
-}
 
 .header .nav ul li {
     display: inline;
@@ -95,9 +92,6 @@ main { /*adds max width to all elements */
 }
 
 .header .nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
     font-size: 16px;
     margin: 0;
 }
@@ -146,11 +140,12 @@ h2 {
 /*Style for text below Bachlorprogram*/
 .undertext {
     font-size: 15px;
-    margin: zero;
+    margin: 0;
 }
 
 .underheading {
     font-weight: bold;
+    font-size: 25px;
 }
 /* styling for drop-down list */
 .info {
