@@ -5,6 +5,11 @@
     box-sizing: border-box;
   }
 /* line-height, font-size, color-contrast in body, and padding around main content following WCAG-recommentations for better visibility and therefore also accessibility*/
+main { /*adds max width to all elements */
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Adds some padding for smaller screens */
+}
 .body {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
@@ -423,7 +428,7 @@ border-bottom: black;
 /*general styling for the education program cards, deciding for example backgroud color, size, flex, and shape. */
 .program-info { 
     display: flex;
-    width: 100%;
+    width: 95%;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -464,7 +469,7 @@ border-bottom: black;
     font-size: 14px;
     color: #333;
 }
-/* End of spexial Index css code */
+/* End of special Index css code */
 
 /* Start of GitHub css code */
 .github { /* Changes font styling & sets margin to scale webpage */
@@ -504,6 +509,14 @@ border-bottom: black;
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 1rem; /* Adds some padding for smaller screens */
+}
+
+.github .box { /* Adds box to surrounding pictures and text*/
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 /* End of GitHub css code */
 
@@ -652,8 +665,10 @@ a:focus, input:focus, .WCAG-link:hover {
   
   /*Styling for activity main-tag*/
   .activity-main{
-    margin: 7vw;
-    margin-top: 0;
+      margin: 0 auto;
+      margin-top: 0;
+      max-width: 1800px; /* Adjust based on the design's max width */
+      padding: 0 1rem; /* Optional for padding */
   }
   
   /*Flexbox for activity page header*/
