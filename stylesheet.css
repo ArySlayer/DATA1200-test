@@ -1,15 +1,29 @@
+/*List of contents:
+   * Shared CSS
+   * CSS for MatMod page
+   * CSS for GitHub page
+   * CSS for accessibility page
+   * CSS for Activity page 
 
-/* Start of shared basic css for the website, except the activity page.
-   All tags have classes with the same name to avoid interference with activity page design*/
+   CSS code will follow page sectoions as much as possible.*/  
+
+
+/* Start of shared basic css for the website. */
+
+/*All tags have classes with the same name to avoid interference with activity page design*/
+
+/*Includes padding and and border to elements total size*/
 * {
     box-sizing: border-box;
   }
 /* line-height, font-size, color-contrast in body, and padding around main content following WCAG-recommentations for better visibility and therefore also accessibility*/
+
 main { /*adds max width to all elements */
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 1rem; /* Adds some padding for smaller screens */
 }
+
 .body {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
@@ -61,7 +75,6 @@ main { /*adds max width to all elements */
       font-size: 1rem;
     }
   }
-
 
 .header .nav a:hover {
     text-decoration: underline;
@@ -329,8 +342,8 @@ border-bottom: black;
     margin-bottom: 20px;
 }
 
-/*styles the heading "Spørsmål om utdanningen?"*/
-.education-questions {
+ /*styles the heading "Spørsmål om utdanningen?"*/
+ .education-questions {
     display:block;
     color:black;
     font-weight: bold;
@@ -344,6 +357,42 @@ border-bottom: black;
     text-decoration-color: #129c9c;
     text-decoration-thickness: 2px;
     margin-bottom: 20px;
+}
+
+/*styles the heading "Spørsmål om utdanningen?"*/
+.flex-box{
+    display:flex;
+    flex-direction: row;
+    align-items: top;
+  }
+  
+  /*Giving a different display for smaller sizes*/
+  @media screen and (max-width: 800px) {
+    .flex-box{
+      display:grid;
+      align-items: center;
+    }
+  }
+  
+  /*Styling of information table*/
+  .flex-box .professional-manager {
+    flex:1;
+    width: 90%;
+    margin-right: 3vw;
+  }
+  /*Putting paragraphs in a box */
+  .contact-info {
+    flex: 1;
+    width: 90%;
+    text-align: justify;
+    margin-right: 3vw;
+  }
+
+/* makes the hover effect slightly change color*/
+.manager-profile:hover {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
 }
 
 /*styling the heading "Faglig leder"*/
@@ -377,11 +426,6 @@ border-bottom: black;
     margin:0 auto;
 }
 
-/* makes the hover effect slightly change color*/
-.manager-profile:hover {
-    background-color: #f0f0f0;
-}
-
 /*styles the manager image*/
 .manager-image img {
     width: 121px;
@@ -394,8 +438,7 @@ border-bottom: black;
 .manager-info {
     font-size: 14px;
     flex-grow: 1;
-    margin-right: 20px;
-   
+    margin-right: 20px;   
 }
 
 /* styles the information about the manager*/
@@ -467,9 +510,6 @@ border-bottom: black;
   margin: 0;
   color: #333;
   background-color: #f9f9f9;
-}
-.github main {
-  padding: 2rem;
 }
 
 .github h2 { /* Adds Color to github h2 */
